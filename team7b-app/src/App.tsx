@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './HomePage';
 import ProjectJourneyPage from './ProjectJourneyPage';
 import ReflectionPage from './ReflectionPage';
-import Navbar from './Navbar';  // import the Navbar
+import Navbar from './Navbar';
 
 const App: React.FC = () => {
   return (
