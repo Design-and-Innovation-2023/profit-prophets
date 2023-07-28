@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import Footer from './Footer';
 import HomePage from './HomePage';
+import Navbar from './Navbar';
 import ProjectJourneyPage from './ProjectJourneyPage';
 import ReflectionPage from './ReflectionPage';
-import Navbar from './Navbar';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Route path="/project-journey" element={<ProjectJourneyPage />} />
         <Route path="/reflection" element={<ReflectionPage />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
