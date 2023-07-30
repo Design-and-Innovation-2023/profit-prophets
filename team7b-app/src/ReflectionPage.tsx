@@ -53,6 +53,7 @@ export default function ProjectJourneyPage() {
         value={value}
         onChange={handleChange}
         aria-label="Vertical tabs example"
+        style={{paddingLeft: '15px', paddingTop: '15px'}}
         sx={{
           borderRight: 1,
           borderColor: 'divider',
@@ -107,7 +108,7 @@ export default function ProjectJourneyPage() {
             }} paragraph>
             Populate with dailies, maybe summarise or rephrase in more of a reflection format.
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px'}} />
+            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
             <Typography variant="h1" sx={{
                 fontFamily: '"Raleway", sans-serif',
                 fontSize: '28px',
@@ -125,7 +126,7 @@ export default function ProjectJourneyPage() {
             }} paragraph>
             Populate with dailies, maybe summarise or rephrase in more of a reflection format.
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px'}} />
+            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
             </div>
         </Container>
       </TabPanel>
@@ -158,7 +159,7 @@ export default function ProjectJourneyPage() {
             }} paragraph>
             Populate with dailies, maybe summarise or rephrase in more of a reflection format.
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px'}} />
+            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
             <Typography variant="h1" sx={{
                 fontFamily: '"Raleway", sans-serif',
                 fontSize: '28px',
@@ -176,7 +177,7 @@ export default function ProjectJourneyPage() {
             }} paragraph>
             Populate with dailies, maybe summarise or rephrase in more of a reflection format.
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px'}} />
+            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
             </div>
         </Container>
       </TabPanel>
@@ -209,7 +210,7 @@ export default function ProjectJourneyPage() {
             }} paragraph>
             Populate with dailies, maybe summarise or rephrase in more of a reflection format.
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px'}} />
+            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
             <Typography variant="h1" sx={{
                 fontFamily: '"Raleway", sans-serif',
                 fontSize: '28px',
@@ -227,7 +228,7 @@ export default function ProjectJourneyPage() {
             }} paragraph>
             Populate with dailies, maybe summarise or rephrase in more of a reflection format.
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px'}} />
+            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
             </div>
         </Container>
       </TabPanel>
@@ -260,7 +261,7 @@ export default function ProjectJourneyPage() {
             }} paragraph>
             Populate with dailies, maybe summarise or rephrase in more of a reflection format.
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px'}} />
+            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
             <Typography variant="h1" sx={{
                 fontFamily: '"Raleway", sans-serif',
                 fontSize: '28px',
@@ -278,7 +279,7 @@ export default function ProjectJourneyPage() {
             }} paragraph>
             Populate with dailies, maybe summarise or rephrase in more of a reflection format.
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px'}} />
+            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
             </div>
         </Container>
       </TabPanel>

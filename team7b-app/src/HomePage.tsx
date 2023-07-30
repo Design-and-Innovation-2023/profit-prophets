@@ -24,35 +24,64 @@
 
 
 import { Box, Button, Card, CardContent, CardMedia, Container, Divider, Grid, Typography } from '@mui/material';
+import { styled } from '@mui/system';
+import Carousel from "nuka-carousel";
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
+
+const FlexContainer = styled('div')({
+  display: 'flex',
+  alignItems: 'center',
+});
 
 const HeroSection = () => {
   return (
     <section id="hero" className="d-flex align-items-center justify-content-center">
       <Container>
-        <div className="position-relative" style={{ textAlign: 'center' , margin: '100px'}}>
-          <Typography variant="h1" sx={{
+        <div className="position-relative" style={{ textAlign: 'left' , margin: '100px'}}>
+        <FlexContainer>
+        <div>
+          <Typography
+            variant="h1"
+            sx={{
               fontFamily: '"Raleway", sans-serif',
-              fontSize: '28px',
+              fontSize: '45px',
               lineHeight: '36px',
-              fontWeight: 700
-            }} style={{ color: '#59596a'  , margin: '20px'}}>
-            Welcome to Team 7B's Diary
+              fontWeight: 700,
+              color: '#59596a',
+              marginBottom: '20px',
+            }}
+          paragraph>
+            Welcome to
           </Typography>
-          <Typography variant="h2" sx={{
+          <Typography
+            variant="h1"
+            sx={{
+              fontFamily: '"Raleway", sans-serif',
+              fontSize: '45px',
+              lineHeight: '36px',
+              fontWeight: 700,
+              color: '#59596a',
+              marginBottom: '40px',
+            }}
+          paragraph>
+            Team 7B's Diary
+          </Typography>
+          <Typography
+            variant="h2"
+            sx={{
               color: '#59596a',
               fontFamily: '"Raleway", sans-serif',
-              fontSize: '18px',
+              fontSize: '19px',
               lineHeight: '24px',
               fontWeight: '500',
               marginBottom: '20px',
               paddingBottom: '20px',
-              position: 'relative'
-            }} style={{ color: '#59596a'  , margin: '20px'}}>
+              position: 'relative',
+            }}
+          >
             Navigate to different sections to learn more about our journey, reflections, and proud moments.
           </Typography>
-          {/* <Button color="inherit" component={Link} to="/project-journey" variant="outlined" style={{ color: '#59596a', margin: '10px'}} >Get Started</Button> */}
           <ScrollLink
             activeClass="active"
             to="about"
@@ -61,14 +90,17 @@ const HeroSection = () => {
             offset={-70} // Adjust the offset value based on your layout
             duration={500}
           >
-            <Button
-              color="inherit"
-              variant="outlined"
-              style={{ color: '#59596a', margin: '10px' }}
-            >
+            <Button color="inherit" variant="outlined" style={{ color: '#59596a' }}>
               Get Started
             </Button>
           </ScrollLink>
+        </div>
+        <img
+          src={process.env.PUBLIC_URL + '/teamPicture.jpg'}
+          alt="Welcome"
+          style={{ width: '475px', height: 'auto', marginLeft: '20px' }}
+        />
+      </FlexContainer>
         </div>
       </Container>
     </section>
@@ -87,8 +119,7 @@ const AboutSection = () => {
               fontSize: '32px',
               fontWeight: 'bold',
               textTransform: 'uppercase',
-              marginBottom: '20px',
-              paddingBottom: '20px',
+              paddingBottom: '10px',
               position: 'relative'
             }} style={{ color: '#59596a'  , margin: '10px'}}>
               Our Project
@@ -210,6 +241,38 @@ const AboutSection = () => {
   );
 };
 
+const CarouselSection = () => {
+  const photos = [
+    process.env.PUBLIC_URL + '/teamPicture.jpg',
+    process.env.PUBLIC_URL + '/placeholder.jpeg',
+    process.env.PUBLIC_URL + '/teamPicture.jpg',
+    process.env.PUBLIC_URL + '/placeholder.jpeg',
+    process.env.PUBLIC_URL + '/teamPicture.jpg',
+    process.env.PUBLIC_URL + '/placeholder.jpeg',
+  ];
+
+  return (
+    <div style={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '350px',
+    }}>
+      <Carousel autoplay={true} autoplayInterval={7000} wrapAround={true} style={{ maxWidth: '600px', width: '100%', height: '100%', margin: '20px auto', textAlign: 'center' }}>
+        {photos.map((photo, index) => (
+          <img
+            key={index}
+            src={photo}
+            alt={`Photo${index + 1}`}
+            style={{ maxHeight: '500px', width: '100%', margin: 'auto' }}
+          />
+        ))}
+      </Carousel>
+    </div>
+  );
+};
+
+
 const ProjectSection = () => {
   return (
     <section
@@ -255,6 +318,7 @@ const HomePage = () => {
     <Box sx={{ flexGrow: 1 }}>
       <HeroSection />
       <AboutSection />
+      <CarouselSection />
       <ProjectSection />
     </Box>
   );

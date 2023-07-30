@@ -13,9 +13,9 @@ const StyledAppBar = styled(AppBar)({
 const Footer = () => {
   return (
     <StyledAppBar position="static">
-      <Container>
+      <Container style={{padding: '20px'}}>
         <Toolbar>
-          <Box sx={{ flexGrow: 1 }}>
+          <Box sx={{ flexGrow: 1}}>
             <div className="footer-top" style={{
               display: 'flex',
               alignItems: 'center',
