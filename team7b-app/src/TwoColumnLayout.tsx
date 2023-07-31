@@ -8,7 +8,7 @@ interface TwoColumnLayoutProps {
 const TwoColumnLayout: React.FC<TwoColumnLayoutProps> = ({ leftContent, rightContent }) => {
   return (
     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-      <div style={{ flex: 1, marginRight: '20px' }}>
+      <div style={{ flex: 1 }}>
         {leftContent}
       </div>
       <div style={{ flex: 1 }}>

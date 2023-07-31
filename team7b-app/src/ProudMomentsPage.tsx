@@ -1,10 +1,11 @@
 import { Container, Divider, Typography } from '@mui/material';
 import TwoColumnLayout from './TwoColumnLayout';
+import './ProudMomentsPage.css';
 
 
 const ProudMomentsPage = () => {
   return (
-    <div style={{backgroundColor: '#ededed', minHeight: '100vh'}}>
+    <div className='proud-moments-page'>
       
         {/* Content for Requirement Gathering */}
         <Container>
@@ -14,7 +15,7 @@ const ProudMomentsPage = () => {
                 fontFamily: '"Raleway", sans-serif',
                 fontSize: '36px',
                 lineHeight: '36px',
-                fontWeight: 700
+                fontWeight: 700,
                 }} style={{ color: '#59596a'  , margin: '20px'}}>
                 Our Journey: Overcoming Challenges, Achieving Success
             </Typography>
@@ -27,7 +28,7 @@ const ProudMomentsPage = () => {
                 fontSize: '14px',
                 margin: '20px'
             }} paragraph>
-            Our team consists of six individuals, each bringing their unique skill sets and perspectives. At the outset, we faced the obstacle of varying degrees of familiarity with one another and the project. However, we recognized the importance of cohesive teamwork and swiftly focused on building strong communication and rapport among team members. With a clear understanding of our strengths and weaknesses, we embarked on our ambitious project with determination and a shared commitment to success.
+            This page documents the obstacles we faced throughout this project, and the solutions to overcome them.
             </Typography>
             
             {/* <Typography variant="h2" sx={{
@@ -101,7 +102,7 @@ const ProudMomentsPage = () => {
                     fontSize: '14px',
                     margin: '20px'
                   }} paragraph>
-                  Our team consists of six individuals, each bringing their unique skill sets and perspectives. At the outset, we faced the obstacle of varying degrees of familiarity with one another and the project. 
+                  Our team consists of six individuals, each bringing their unique skill sets and perspectives. At the outset, we faced the obstacle of varying degrees of familiarity with one another. 
                   </Typography>
                 </div>
               
@@ -114,7 +115,7 @@ const ProudMomentsPage = () => {
                     fontSize: '14px',
                     margin: '20px'
                 }} paragraph>
-                However, we recognized the importance of cohesive teamwork and swiftly focused on building strong communication and rapport among team members. With a clear understanding of our strengths and weaknesses, we embarked on our ambitious project with determination and a shared commitment to success.
+                We know the importance of cohesive teamwork and swiftly focused on establishing clear means of communication and rapport among each other. With a clear understanding of our mindsets, we embarked on our ambitious project with determination and a shared commitment to success.
                 </Typography>
             }
             />
@@ -141,7 +142,7 @@ const ProudMomentsPage = () => {
                     fontSize: '14px',
                     margin: '20px'
                   }} paragraph>
-                  Our Overseas Immersion Programme (OIP) spans from the 13th of July to the 5th of August. However, our classes commence on the 18th of July, and it's only on the 19th that we will have our first meeting with our client, Mr. Gregory Peters. With the OIP exhibition in sight, we find ourselves with a mere 9 working days to handle crucial tasks like gathering functional and non-functional requirements from the client, conducting in-depth research, designing the concept, and creating a prototype.
+                  Our Overseas Immersion Programme (OIP) spans from July 13th to August 5th. However, our classes commence on July 18th, and it would be only on the 19th that we will have our first meeting with our client, Mr. Gregory Peters. With the OIP exhibition fast approaching, we would have a mere 9 working days to handle crucial tasks like gathering functional and non-functional requirements from the client, conducting research, concept design and prototyping.
                   </Typography>
                 </div>
             }
@@ -154,7 +155,7 @@ const ProudMomentsPage = () => {
                     fontSize: '14px',
                     margin: '20px'
                 }} paragraph>
-                Thankfully, being a team of 6 allows us to efficiently distribute the workload. By leveraging our strengths and expertise, we can divide responsibilities and efficiently tackle challenges despite a short time frame. To make the most of the limited time available, we set clear and achievable goals. This approach ensures that each team member knows their role, allowing us to maintain focus and make significant progress within the given time constraints. 
+                Thankfully, being a team of six allows us to efficiently distribute the workload. By leveraging our strengths and expertise, we can divide responsibilities and efficiently tackle challenges despite a short time frame. We also set clear and achievable goals to ensures that each team member knows their role. This allowed us to maintain focus and make significant progress within the given time constraints.
                 </Typography>
               </div>
             }
@@ -182,8 +183,7 @@ const ProudMomentsPage = () => {
                     fontSize: '14px',
                     margin: '20px'
                   }} paragraph>
-                  One of the significant obstacles we faced during the project was dealing with hazy design requirements. With Barclays as our client, we were tasked with designing an application to help individuals maximise their savings by streamlining the process of transferring funds between accounts, ensuring it is convenient for use. There are also other considerations, such as aggregating savings rates from various types of bank accounts, ranking
-                  them based on the highest interest rates available to customers, and even more that we would find in preliminary research before meeting our client. As the initial specifications lacked specificity, we found ourselves in a challenging position to determine precisely what the client wanted and needed for their project.
+                  One of the significant obstacles we faced during the project was dealing with hazy design requirements. With Barclays as our client, we were tasked with designing an application to help individuals maximise their savings and ensure it is convenient for use. With numerous considerations even prior to meeting Mr Peters and the initial specifications lacking in specificity, we found ourselves in a challenging position to determine precisely what the client wanted and needed for their project.
                   </Typography>
                 </div>
             }
@@ -196,8 +196,7 @@ const ProudMomentsPage = () => {
                     fontSize: '14px',
                     margin: '20px'
                 }} paragraph>
-                To address this challenge, we adopted a proactive and communicative approach by a comprehensive list of questions to discuss with the client. By asking thoughtful questions and involving them in the design process, we could gain additional insights into their objectives and concerns. One such concern is the cost of living crisis in the UK. If our concept could serve to help people maximise their savings, it is vital we do so. This kind of insights and discussions ensured that their evolving preferences and requirements were properly understood and integrated. 
-                Additionally, we took the initiative to present our design concepts at client meetings. This allowed us to receive timely feedback from the client and validate whether our solutions aligned with their expectations. 
+                To address this challenge, we adopted a proactive and communicative approach with a comprehensive list of questions to discuss with the client. By asking thoughtful questions and involving them in the design process, we learned about their objectives and concerns, such as the cost of living crisis in the UK. Additionally, we took the initiative to present our design concepts at client meetings. This allowed us to receive timely feedback from the client and validate whether our solutions aligned with their expectations.
                 </Typography>
               </div>
             }
@@ -225,7 +224,7 @@ const ProudMomentsPage = () => {
                     fontSize: '14px',
                     margin: '20px'
                   }} paragraph>
-                  Another significant hurdle is our lack of familiarity with the savings accounts offered by the (very) numerous banks an individual could sign up for. Thus, this meant that for our design whos' key feature is the savings account comparison concept to enable users to easily understand how their account(s) compare to a suggested/chosen savings account, we needed to conduct thorough research to understand the essential metrics required to effectively evaluate and compare different savings accounts offered by various banks. Additionally, we were also unaware of the legal considerations that might be relevant to our concept, which further complicated our approach.
+                  Another significant hurdle is our lack of familiarity with the numerous banks and their savings accounts, which was vital to our design. To create the key savings account comparison tool in our design, we conducted extensive research on the essential metrics required to evaluate and compare different accounts. We alse faced additional complexity due to unfamiliarity with relevant legal considerations.
                   </Typography>
                 </div>
             }
@@ -238,7 +237,7 @@ const ProudMomentsPage = () => {
                     fontSize: '14px',
                     margin: '20px'
                 }} paragraph>
-                To ensure compliance with legal requirements, we took a safety-first approach. Despite not being law students, we researched the UK government websites and examined the relevant legislations applicable to savings accounts. While navigating the complexities of legal jargon, we strived to comprehend and interpret the information to the best of our abilities. When in doubt, we conferred with our client, and if needed defaulted to what we found were industry standards for applications that interface with banks and savings accounts.
+                To comply with legal requirements, we prioritized safety. We researched the UK government websites and relevant legislations for savings accounts, striving to understand the complex legal jargon. When in doubt, we consulted with our client, and followed industry standards for bank and savings account applications.
                 </Typography>
               </div>
             }
