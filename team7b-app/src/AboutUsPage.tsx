@@ -9,6 +9,7 @@ const teamMembers = [
     name: 'Yan Hern Ryan Sim',
     role: 'Software Engineer',
     description: 'Yan Hern Ryan Sim is a talented software engineer with a passion for front-end development.',
+    portrait: './assets/team_members/Ryan.jpg',
     linkedin: 'https://www.linkedin.com/company/the-white-house',
     github: 'https://github.com/iShorty/',
     website: 'https://www.taharkhan.com/',
@@ -17,25 +18,26 @@ const teamMembers = [
     id: 2,
     name: 'Ng Geok Ting',
     role: 'Software Engineer',
-    description: 'Ng Geok Ting is a talented software engineer with a passion for front-end development.',
-    linkedin: 'https://www.linkedin.com/company/the-white-house',
-    github: 'https://github.com/iShorty/',
-    website: 'https://www.taharkhan.com/',
+    description: 'I am a dedicated and innovative product designer, specializing in creating user-centric experiences to solve complex challenges. Team 7B’s design process ensures optimal usability and visual appeal in every project.',
+    portrait: './assets/team_members/GeokTing.jpg',
+    linkedin: 'https://sg.linkedin.com/in/ng-geok-ting',
+    github: 'https://github.com/nggeokting',
   },
   {
     id: 3,
     name: 'Enrique Marcelo',
     role: 'Software Engineer',
-    description: 'Enrique Marcelo is a talented software engineer with a passion for front-end development.',
-    linkedin: 'https://www.linkedin.com/company/the-white-house',
+    description: 'I am an talented software engineer with an interest in Artificial Intelligence and Machine Learning. On the weekends or during my free time, I dance, go bouldering, or read a nice book.',
+    portrait: './assets/team_members/Enrique.jpg',
+    linkedin: 'https://www.linkedin.com/in/enrique-marcelo/',
     github: 'https://github.com/iShorty/',
-    website: 'https://www.taharkhan.com/',
   },
   {
     id: 4,
     name: 'Shi Ying Nicole Ng',
     role: 'Software Engineer',
     description: 'Shi Ying Nicole Ng is a talented software engineer with a passion for front-end development.',
+    portrait: './assets/team_members/Nicole.jpg',
     linkedin: 'https://www.linkedin.com/company/the-white-house',
     github: 'https://github.com/iShorty/',
     website: 'https://www.taharkhan.com/',
@@ -45,6 +47,7 @@ const teamMembers = [
     name: 'Kai En Yong',
     role: 'Software Engineer',
     description: 'Kai En Yong is a talented software engineer with a passion for front-end development.',
+    portrait: './assets/team_members/KaiEn.jpg',
     linkedin: 'https://www.linkedin.com/company/the-white-house',
     github: 'https://github.com/iShorty/',
     website: 'https://www.taharkhan.com/',
@@ -53,10 +56,9 @@ const teamMembers = [
     id: 6,
     name: 'Daycee Li Lyn Lau',
     role: 'Software Engineer',
-    description: 'Daycee Li Lyn Lau is a talented software engineer with a passion for front-end development.',
-    linkedin: 'https://www.linkedin.com/company/the-white-house',
-    github: 'https://github.com/iShorty/',
-    website: 'https://www.taharkhan.com/',
+    description: 'Easy going team player, contributed to the prototyping of the mobile web application.',
+    portrait: './assets/team_members/Daycee.jpg',
+    linkedin: 'https://www.linkedin.com/in/daycee-lau-23b38416a/',
   },
 ];
 
@@ -92,17 +94,12 @@ const AboutUsPage: React.FC = () => {
         {teamMembers.map((member, index) => (
           <TeamMemberCard
             key={index}
-            member={member} 
+            member={member}
             id={index + 1}
           />
         ))}
       </div>
 
-      {/* <div className="team-members-container">
-        {teamMembers.map((member, index) => (
-          <TeamMemberCard key={index} member={member} id={index + 1} />
-        ))}
-      </div> */}
     </div>
   );
 };

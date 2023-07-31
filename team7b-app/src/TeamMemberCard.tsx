@@ -1,19 +1,16 @@
-import React from 'react';
-import { Container, Divider, Typography } from '@mui/material';
-import TwoColumnLayout from './TwoColumnLayout';
+import React, { useState, useEffect } from 'react';
+import { Divider, Typography } from '@mui/material';
 import LinkedInLogo from './assets/LI-In-Bug.png';
 import GithubLogoDark from './assets/github-mark.png';
 import GlobeIcon from './assets/globe.png';
 import './TeamMemberCard.css';
-import { Height } from '@mui/icons-material';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 export interface TeamMember {
     id: number;
     name: string;
     role: string;
+    portrait: string;
     description: string;
     linkedin?: string;
     github?: string;
@@ -21,11 +18,27 @@ export interface TeamMember {
   }
   
   interface TeamMemberCardProps {
-    member: TeamMember;
     id: number;
+    member: TeamMember;
   }
-  
+
   const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, id }) => {
+    
+    const [imageSrc, setImageSrc] = useState<string | undefined>();
+
+    useEffect(() => {
+      const importPortrait = async () => {
+        try {
+          const image = await import(`${member.portrait}`);
+          setImageSrc(image.default);
+        } catch (error) {
+          console.error('Error loading image:', error);
+        }
+      };
+
+      importPortrait();
+    }, [member.portrait]);
+    
     return (
       <div className="team-member-card" data-card-id={id}>
         
@@ -49,7 +62,8 @@ export interface TeamMember {
                 marginLeft: '20px',
                 fontStyle: 'italic'
               }} paragraph>
-              {member.role}{id === 1 ? ", Main Point of Contact" : null}
+              {/* {member.role}{id === 1 ? ", Main Point of Contact" : null} */}
+              {id === 1 ? "Main Point of Contact" : null}
               </Typography>
 
               <Typography variant="body2" sx={{
@@ -69,11 +83,11 @@ export interface TeamMember {
           <div style={{ flex: 1 }}>
             
             <div className='right-content'>
-                <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" className="team-member-card-portrait" />
+                <img src={imageSrc} alt="Logo" className="team-member-card-portrait" />
                 <div className="social-links" >
                     {member.linkedin && (
                       <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                        <img src={LinkedInLogo} alt="Logo" className="team-member-card-icon" />
+                        <img src={LinkedInLogo} alt="Logo" className={`team-member-card-icon ${member.id === 1 ? 'rounded-border' : ''}`} />
                       </a>
                     )}
                     {member.github && (
