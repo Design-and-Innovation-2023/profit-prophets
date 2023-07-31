@@ -12,10 +12,23 @@
 .team-member-card:hover,
 .team-member-card.focused {
   opacity: 1;
+  border-color: rgb(0, 176, 245);
 }
 
 .team-member-card:not(:hover) {
   opacity: 0.5;
+}
+
+/* Not sure if this is applying at all, or if it's what I want (copied from another divider elsewhere), will check later. divider component is weird */
+.team-member-card-divider {
+  display: 'block'; 
+  margin: '0 auto'; 
+  height: 2; 
+  max-width: 60;
+}
+
+.team-member-card:hover > .team-member-card-divider {
+  border-color: rgb(0, 176, 245);
 }
 
 .right-content {

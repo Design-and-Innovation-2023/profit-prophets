@@ -78,7 +78,7 @@ export interface TeamMember {
 
           </div>
 
-          <Divider orientation="vertical" flexItem />
+          <Divider color='00b0f5' className='team-member-card-divider' orientation="vertical" flexItem />
 
           <div style={{ flex: 1 }}>
             
