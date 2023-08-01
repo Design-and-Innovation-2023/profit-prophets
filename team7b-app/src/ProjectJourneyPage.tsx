@@ -13,20 +13,19 @@ const StyledVerticalTimeline = styled(VerticalTimeline)`
 const ProjectJourneyPage = () => {
   return (
     <div style={{backgroundColor: '#fff', minHeight: '100vh'}}>
-      <h1>Project Journey</h1>
+      <h1 style={{textAlign: 'center', color:'#59596A'}}>Project Journey</h1>
       <StyledVerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} 
-          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} 
+          contentArrowStyle={{ borderRight: '7px solid  rgb(77, 182, 255)' }} 
         >
           <h3 className="vertical-timeline-element-title">Conceptualization (18 July 2023)</h3>
           <p>We formulated questions for our partners at Barclays based on a Behaviour Driven Development Model. Our aim is to align our team's understanding of the final product's behavior, ensuring clarity in requirements and avoiding miscommunications.</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2023-02-01"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} // Change box color here
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} // Change arrow color here
@@ -39,29 +38,60 @@ const ProjectJourneyPage = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2023-03-01"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} // Change box color here
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} // Change arrow color here
         >
-          <h3 className="vertical-timeline-element-title">User Needs Research (20 July - 22 July 2023)</h3>
+          <h3 className="vertical-timeline-element-title">User Needs Research (20 - 22 July 2023)</h3>
           <p>Our team researched key metrics to enable customers to effectively compare savings accounts. 
             We conducted an in-depth analysis of different types of savings accounts, reviewed open banking principles, 
             and studied existing account comparison websites.
             From our research, we identified crucial metrics including interest rate, eligibility requirements, fees, 
             tax implications, accessibility, account closure requirements, potential cashback, open banking integration, 
             and customer support. We also commenced ranking these metrics based on user surveys and interviews to ensure our 
-            findings align with user needs and preferences.</p>
+            findings align with user needs and preferences. <br/><br/>
+            The team recognised that achieving user trust is vital, especially with sharing sensitive financial data, hence we
+            considered the implications of GDPR and financial regulations in our design. We also sought impartial opinions 
+            from our peers through surveys, examining their perceptions of the application and their willingness to share financial information.
+            Out of 20 peers surveyed, 14 agreed to share data, given secure storage and proper usage, while the remaining six objected, 
+            citing potential risks of data leaks and misuse for marketing or advertisement.
+            </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2023-04-01"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} // Change box color here
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} // Change arrow color here
         >
-          <h3 className="vertical-timeline-element-title">Overcoming Setbacks</h3>
-          <p>Explanation of how we overcame various obstacles.</p>
+          <h3 className="vertical-timeline-element-title">Low-Fidelity Paper Wireframing (23 - 25 July 2023)</h3>
+          <p> Based on our research insights, we drafted paper wireframes of our application that simulates the user flow
+            from the registration process, to the furnishing of financial information and to the bank account comparison pages.
+            This paper prototype is an important step in our design process. It provides a cost-effective means of visualizing 
+            the application's functionality and flow, enabling us to spot potential user-experience challenges early on, 
+            and make any necessary adjustments before we begin the actual development.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} // Change box color here
+          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} // Change arrow color here
+        >
+          <h3 className="vertical-timeline-element-title">High-Fidelity Figma Wireframing (28 - 31 July 2023)</h3>
+          <p> Upon successfully refining our application's design and flow with paper prototyping, we advanced 
+            to creating high-fidelity wireframes using Figma. This transition allowed us to convert our preliminary sketches
+            into more detailed representations.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} // Change box color here
+          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} // Change arrow color here
+        >
+          <h3 className="vertical-timeline-element-title">Figma Prototyping (1 - 3 August 2023)</h3>
+          <p> Write about Prototyping
+          </p>
         </VerticalTimelineElement>
       </StyledVerticalTimeline>
     </div>
