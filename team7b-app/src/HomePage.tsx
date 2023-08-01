@@ -134,7 +134,7 @@ const AboutSection = () => {
                     <CardMedia
                       component="img"
                       style={{maxWidth: '60%', height: 'auto' }}
-                      image={process.env.PUBLIC_URL + '/contextIcon.jpg'}
+                      image={process.env.PUBLIC_URL + '/rateIcon.jpg'}
                       alt="Card Image"
                     />
                     <Typography sx={{
@@ -144,21 +144,15 @@ const AboutSection = () => {
                       fontSize: '22px',
                       lineHeight: 1.2
                     }} style={{ color: '#59596a'}}>
-                      Context
+                      Fixed Rate? <br></br>
+                      Variable Rate?
                     </Typography>
                     <Typography variant="body2" sx={{
                       fontFamily: '"Open Sans", sans-serif',
                       lineHeight: '24px',
                       fontSize: '14px'
                     }} paragraph>
-                    Barclays, with a history dating back to 1690, is a global financial institution known for innovation and its network of Eagle Labs across the UK.
-                    </Typography>
-                    <Typography variant="body2" sx={{
-                      fontFamily: '"Open Sans", sans-serif',
-                      lineHeight: '24px',
-                      fontSize: '14px'
-                    }} paragraph>
-                    Their flagship Glasgow campus, opened in 2021, focuses on sustainability and inclusivity.
+                    Savings account offerings differ among banks, with various interest rates, deposit requirements, and eligibility rules. What may work for others, may not work well for you!
                     </Typography>
                   </CardContent>
                 </Card>
@@ -169,7 +163,7 @@ const AboutSection = () => {
                       <CardMedia
                         component="img"
                         style={{maxWidth: '60%', height: 'auto' }}
-                        image={process.env.PUBLIC_URL + '/problemIcon.jpg'}
+                        image={process.env.PUBLIC_URL + '/whyIcon.jpg'}
                         alt="Card Image"
                       />
                     <Typography sx={{
@@ -179,21 +173,15 @@ const AboutSection = () => {
                       fontSize: '22px',
                       lineHeight: 1.2
                     }} style={{ color: '#59596a'}}>
-                      Problem Statement
+                      Why It Matters
                     </Typography>
                     <Typography variant="body2" sx={{
                       fontFamily: '"Open Sans", sans-serif',
                       lineHeight: '24px',
                       fontSize: '14px'
                     }} paragraph>
-                    The challenge is to create an application that simplifies and optimizes the process of transferring funds between accounts to maximize savings.
-                    </Typography>
-                    <Typography variant="body2" sx={{
-                      fontFamily: '"Open Sans", sans-serif',
-                      lineHeight: '24px',
-                      fontSize: '14px'
-                    }} paragraph>
-                    This app should analyse the user's financial profile, aggregate and rank different savings accounts based on established metrics, allow the user to receive recommendations, and be redirected to set up their preferred account.
+                    Banks often impose penalties onto account holders with accounts that fall short of the minimum deposits or exceed withdrawal limits. 
+                    <br></br><br></br>With ever increasing costs of living, why not switch to an account that helps you save?
                     </Typography>
                   </CardContent>
                 </Card>
@@ -204,7 +192,7 @@ const AboutSection = () => {
                       <CardMedia
                         component="img"
                         style={{maxWidth: '60%', height: 'auto' }}
-                        image={process.env.PUBLIC_URL + '/solutionIcon.jpg'}
+                        image={process.env.PUBLIC_URL + '/helpIcon.jpg'}
                         alt="Card Image"
                       />
                     <Typography sx={{
@@ -214,21 +202,15 @@ const AboutSection = () => {
                       fontSize: '22px',
                       lineHeight: 1.2
                     }} style={{ color: '#59596a'}}>
-                      Our Solution
+                      How We Help
                     </Typography>
                     <Typography variant="body2" sx={{
                       fontFamily: '"Open Sans", sans-serif',
                       lineHeight: '24px',
                       fontSize: '14px'
                     }} paragraph>
-                    To tackle this problem, the initial steps involve researching existing websites that compare bank accounts and interviewing individuals about their savings optimization preferences to develop a metrics for the recommendation system. 
-                    </Typography>
-                    <Typography variant="body2" sx={{
-                      fontFamily: '"Open Sans", sans-serif',
-                      lineHeight: '24px',
-                      fontSize: '14px'
-                    }} paragraph>
-                    Leveraging Barclays experts' knowledge about various savings accounts will also be beneficial.
+                    Rate Chaser works to understand your financial profile and provide personalized recommandations for the best savings account.
+                    <br></br><br></br>View how they stack up using detailed metrics and get updated when a better account is introduced.
                     </Typography>
                   </CardContent>
                 </Card>

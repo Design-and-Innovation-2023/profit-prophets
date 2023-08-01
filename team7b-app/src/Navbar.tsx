@@ -53,7 +53,7 @@ const Header = () => {
           </Box> */}
           <Box sx={{ flexGrow: 1 }}>
             <Link to="/" style={{ textDecoration: 'none', flexGrow: 1 }}>
-              <img src={process.env.PUBLIC_URL + '/websiteLogo.jpg'} alt="Logo" style={{ width: '100%', maxWidth: '90px' }} />
+              <img src={process.env.PUBLIC_URL + '/websiteLogo.jpg'} alt="Logo" style={{ width: '215px'}} />
             </Link>
           </Box>
           <Button color="inherit" component={Link} to="/" style={{ color: '#00b0f5' }} >Home</Button>
