@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import { Route, HashRouter as Router, Routes } from 'react-router-dom';
 import Footer from './Footer';
 import HomePage from './HomePage';
 import Navbar from './Navbar';
@@ -9,6 +9,7 @@ import ProudMomentsPage from './ProudMomentsPage';
 import AboutUsPage from './AboutUsPage';
 
 const App: React.FC = () => {
+  document.title = "Profit Prophets";
   return (
     <Router>
       <Navbar />
