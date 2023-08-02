@@ -1,5 +1,5 @@
 // AboutUsPage.tsx
-import { Typography } from '@mui/material';
+import { Divider, Typography } from '@mui/material';
 import TeamMemberCard from './TeamMemberCard';
 import './AboutUsPage.css';
 
@@ -8,17 +8,17 @@ const teamMembers = [
     id: 1,
     name: 'Yan Hern Ryan Sim',
     role: 'Software Engineer',
-    description: 'Yan Hern Ryan Sim is a talented software engineer with a passion for front-end development.',
+    description: 'Yan Hern Ryan Sim is a talented software engineer.',
     portrait: './assets/team_members/Ryan.jpg',
-    linkedin: 'https://www.linkedin.com/company/the-white-house',
-    github: 'https://github.com/iShorty/',
-    website: 'https://www.taharkhan.com/',
+    // linkedin: 'https://www.linkedin.com/company/the-white-house',
+    // github: 'https://github.com/iShorty/',
+    // website: 'https://www.taharkhan.com/',
   },
   {
     id: 2,
     name: 'Ng Geok Ting',
     role: 'Software Engineer',
-    description: 'I am a dedicated and innovative product designer, specializing in creating user-centric experiences to solve complex challenges. Team 7B’s design process ensures optimal usability and visual appeal in every project.',
+    description: 'I am a dedicated and innovative product designer, specializing in creating user-centric experiences to solve complex challenges. Profit Prophets’s design process ensures optimal usability and visual appeal in every project.',
     portrait: './assets/team_members/GeokTing.jpg',
     linkedin: 'https://sg.linkedin.com/in/ng-geok-ting',
     github: 'https://github.com/nggeokting',
@@ -27,7 +27,7 @@ const teamMembers = [
     id: 3,
     name: 'Enrique Marcelo',
     role: 'Software Engineer',
-    description: 'I am an talented software engineer with an interest in Artificial Intelligence and Machine Learning. On the weekends or during my free time, I dance, go bouldering, or read a nice book.',
+    description: 'Talented software engineer with an interest in Artificial Intelligence and Machine Learning. Contributed to the concept design, research and this website.',
     portrait: './assets/team_members/Enrique.jpg',
     linkedin: 'https://www.linkedin.com/in/enrique-marcelo/',
     github: 'https://github.com/iShorty/',
@@ -36,21 +36,19 @@ const teamMembers = [
     id: 4,
     name: 'Shi Ying Nicole Ng',
     role: 'Software Engineer',
-    description: 'Shi Ying Nicole Ng is a talented software engineer with a passion for front-end development.',
+    description: 'Easy going night owl team player, contributed to enhancing the clickable prototyping and layout correction of the mobile web application.',
     portrait: './assets/team_members/Nicole.jpg',
-    linkedin: 'https://www.linkedin.com/company/the-white-house',
-    github: 'https://github.com/iShorty/',
-    website: 'https://www.taharkhan.com/',
+    linkedin: 'https://www.linkedin.com/in/shi-ying-nicole-ng',
+    github: 'https://github.com/NgShiYingNicole',
   },
   {
     id: 5,
     name: 'Kai En Yong',
     role: 'Software Engineer',
-    description: 'Kai En Yong is a talented software engineer with a passion for front-end development.',
+    description: 'Tech Enthusiast and Aspiring Software Engineer',
     portrait: './assets/team_members/KaiEn.jpg',
-    linkedin: 'https://www.linkedin.com/company/the-white-house',
-    github: 'https://github.com/iShorty/',
-    website: 'https://www.taharkhan.com/',
+    linkedin: 'https://www.linkedin.com/in/kai-en-yong/',
+    github: 'https://github.com/kaiiennn',
   },
   {
     id: 6,
@@ -72,8 +70,10 @@ const AboutUsPage: React.FC = () => {
           lineHeight: '36px',
           fontWeight: 700
           }} style={{ color: '#59596a', margin: '20px'}}>
-          About Us - Team 7B
+          About Us - Profit Prophets
       </Typography>
+
+      <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 445, backgroundColor: '#00b0f5'}}/>
       
       <Typography variant="body2" sx={{
           fontFamily: '"Open Sans", sans-serif',
@@ -81,8 +81,8 @@ const AboutUsPage: React.FC = () => {
           fontSize: '14px',
           margin: '20px'
       }} paragraph>
-      Hello! We are Team 7B, comprising of Kai En Yong, Yan Hern Ryan Sim, Shi Ying Nicole Ng, Ng Geok Ting, Enrique Carlos Marcelo and Daycee Li Lyn Lau. 
-      Thank you for your interest in our work and us! The main person of contact for this project is Ryan Sim. 
+      Hello! We are Profit Prophets, comprising of Kai En Yong, Yan Hern Ryan Sim, Shi Ying Nicole Ng, Ng Geok Ting, Enrique Carlos Marcelo and Daycee Li Lyn Lau. 
+      Thank you for your interest in our work and us! The main point of contact for this project is Ryan Sim. 
       If you'd like to contact any of us individually, our personal links are below.
       <br />
       <br />

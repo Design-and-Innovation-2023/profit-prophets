@@ -19,7 +19,7 @@
 //         <Button color="inherit" component={Link} to="/">Home</Button>
 //         <Button color="inherit" component={Link} to="/project-journey">Project Journey</Button>
 //         <Button color="inherit" component={Link} to="/reflection">Reflection</Button>
-//         <Button color="inherit" component={Link} to="/proud-moments">Proud Moments</Button>
+//         <Button color="inherit" component={Link} to="/achievements">Proud Moments</Button>
 //       </Toolbar>
 //     </StyledAppBar>
 //   );
@@ -59,7 +59,7 @@ const Header = () => {
           <Button color="inherit" component={Link} to="/" style={{ color: '#00b0f5' }} >Home</Button>
           <Button color="inherit" component={Link} to="/project-journey"  style={{ color: '#00b0f5' }} >Project Journey</Button>
           <Button color="inherit" component={Link} to="/reflection" style={{ color: '#00b0f5' }} >Reflection</Button>
-          <Button color="inherit" component={Link} to="/proud-moments" style={{ color: '#00b0f5' }} >Proud Moments</Button>
+          <Button color="inherit" component={Link} to="/achievements" style={{ color: '#00b0f5' }} >Achievements</Button>
           <Button color="inherit" component={Link} to="/about-us" style={{ color: '#00b0f5' }} >About Us</Button>
         </Toolbar>
       </Container>

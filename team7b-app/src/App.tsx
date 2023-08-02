@@ -5,7 +5,7 @@ import HomePage from './HomePage';
 import Navbar from './Navbar';
 import ProjectJourneyPage from './ProjectJourneyPage';
 import ReflectionPage from './ReflectionPage';
-import ProudMomentsPage from './ProudMomentsPage';
+import AchievementsPage from './AchievementsPage';
 import AboutUsPage from './AboutUsPage';
 import ScrollToTop from './ScrollToTop'; // Import the new component
 
@@ -20,7 +20,7 @@ const App: React.FC = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/project-journey" element={<ProjectJourneyPage />} />
         <Route path="/reflection" element={<ReflectionPage />} />
-        <Route path="/proud-moments" element={<ProudMomentsPage />} />
+        <Route path="/achievements" element={<AchievementsPage />} />
         <Route path="/about-us" element={<AboutUsPage />} />
       </Routes>
       <Footer />

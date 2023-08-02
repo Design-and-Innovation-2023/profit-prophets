@@ -19,16 +19,18 @@
   opacity: 0.5;
 }
 
-/* Not sure if this is applying at all, or if it's what I want (copied from another divider elsewhere), will check later. divider component is weird */
-.team-member-card-divider {
-  display: 'block'; 
-  margin: '0 auto'; 
-  height: 2; 
-  max-width: 60;
-}
-
 .team-member-card:hover > .team-member-card-divider {
   border-color: rgb(0, 176, 245);
+}
+
+.team-member-card:hover .team-member-card-icon {
+  border-color: rgb(0, 176, 245);
+  filter: grayscale(0%);
+  opacity: 0.7;
+}
+
+.team-member-card:hover .team-member-card-icon:hover {
+  opacity: 1;
 }
 
 .right-content {
@@ -43,6 +45,8 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
+  border: 2px solid gray;
+  border-radius: 4px;
 }
 
 .social-links {
@@ -50,32 +54,18 @@
   justify-content: space-around;
   align-items: center;
   margin: 10px;
-  /* padding: 10px; */
-  /* margin-left: 15px; */
-  /* margin-right: 15px; */
   width: 100%;
-  /* border: 2px solid #ccc;
-  border-radius: 4px; */
 }
 
 .team-member-card-icon {
   min-width: 40px;
   width: 3vw;
-  /* margin: 10px; */
-  /* border: 2px solid #ccc;
-  border-radius: 2px; */
   padding: 5px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
 }
 
-/* .team-member-card-icon.rounded-border {
-  border-radius: 20px;
-} */
-
-/* 
-@media (max-width: 768px) {
-.team-member-card-portrait {
-  max-width: 10%;
-  margin: 20px;
-} */
+.team-member-card-icon:hover {
+  transform: scale(1.2);
+}
