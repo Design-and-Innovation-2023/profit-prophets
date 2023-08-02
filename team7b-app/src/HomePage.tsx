@@ -209,8 +209,7 @@ const AboutSection = () => {
                       lineHeight: '24px',
                       fontSize: '14px'
                     }} paragraph>
-                    Rate Chaser works to understand your financial profile and provide personalized recommandations for the best savings account.
-                    <br></br><br></br>View how they stack up using detailed metrics and get updated when a better account is introduced.
+                    Rate Chaser analyzes your financial profile to offer personalized savings account recommendations.<br></br><br></br>Use detailed metrics to compare accounts and receive notifications when superior options become available.
                     </Typography>
                   </CardContent>
                 </Card>
