@@ -6,11 +6,12 @@ import conceptualizationImg from './assets/conceptualization.png';
 import barclaysImg from './assets/barclays-office.jpg';
 import paperPrototypeImg from './assets/paper-prototype.jpeg';
 import highFidelityImg from './assets/high-fidelity-prototype.png';
+import thinkAloudImg from './assets/think-aloud.jpg';
 
 //Styled Component to override CSS
 const StyledVerticalTimeline = styled(VerticalTimeline)`
   &::before {
-    background: #59596A; /* Change to whatever color you want */
+    background: #59596A;
   }
 `;
 
@@ -97,9 +98,40 @@ const ProjectJourneyPage = () => {
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} // Change box color here
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} // Change arrow color here
         >
-          <h3 className="vertical-timeline-element-title">Figma Prototyping (1 - 3 August 2023)</h3>
-          <p> Write about Prototyping
+          <h3 className="vertical-timeline-element-title">Figma Prototyping (1 - 2 August 2023)</h3>
+          <p style={{paddingBottom: '15px' }}> Upon the completion of our application's wireframes in Figma, we started our prototyping phase, effectively linking these 
+            wireframes to create a dynamic, interactive user flow. The unique feature of this prototype is that it allows for click-based 
+            navigation, providing a tangible feel of transitioning from one interface to another. The primary goal of this prototyping stage
+             is not just to exhibit the application's unique features, but also to demonstrate a real-time simulation of how prospective users
+              would interact with the application. This immersive, user-centric approach allows us to do iterative design improvements,
+               which will lead to a more intuitive and user-friendly application.
           </p>
+          <div dangerouslySetInnerHTML={{
+            __html:`
+              <iframe 
+                width="475" 
+                height="315" 
+                src="https://www.youtube.com/embed/Z4Tf7xCGUe4" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>`
+          }}
+          />
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} // Change box color here
+          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} // Change arrow color here
+        >
+          <h3 className="vertical-timeline-element-title">Usability testing using Figma Prototype (2 August 2023)</h3>
+          <p> A usability test was conducted in terms of a think aloud. We provided the participant with a structured script such as 
+            'You are a student with £10,000 in savings in a Tesco instant access savings account. Each month, you spend £500 and make five 
+            withdrawals totaling £200. Use our application to find the bank account best suited to your needs.' From time to time, we will 
+            also prompt users to share their observations, thoughts, and feelings as they interact with the application.
+          </p>
+          <img src={thinkAloudImg} alt="Think-Aloud Test" style={{maxWidth: '100%', height: 'auto', display: 'block', paddingTop: '15px', marginLeft: 'auto', marginRight: 'auto'}}/>
         </VerticalTimelineElement>
       </StyledVerticalTimeline>
     </div>
