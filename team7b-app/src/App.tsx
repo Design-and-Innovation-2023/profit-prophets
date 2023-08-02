@@ -7,11 +7,14 @@ import ProjectJourneyPage from './ProjectJourneyPage';
 import ReflectionPage from './ReflectionPage';
 import ProudMomentsPage from './ProudMomentsPage';
 import AboutUsPage from './AboutUsPage';
+import ScrollToTop from './ScrollToTop'; // Import the new component
 
 const App: React.FC = () => {
   document.title = "Profit Prophets";
+
   return (
     <Router>
+      <ScrollToTop />  {/* Add this line */}
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
