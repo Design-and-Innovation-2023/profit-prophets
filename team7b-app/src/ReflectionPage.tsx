@@ -77,7 +77,8 @@ export default function ProjectJourneyPage() {
         <Tab label="Refinement" {...a11yProps(2)} />
         <Tab label="Roadshow" {...a11yProps(3)} />
         <Divider variant="middle" style={{display: 'block', height: 0.1, maxWidth: 210, backgroundColor: '#59596a'}}/>
-        <Tab label="Weekly Pitch Videos" {...a11yProps(4)} />
+        <Tab label="Weekly Dailies" {...a11yProps(4)} />
+        <Tab label="Weekly Pitch Videos" {...a11yProps(5)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         {/* Content for Requirement Gathering */}
@@ -284,6 +285,108 @@ export default function ProjectJourneyPage() {
         </Container>
       </TabPanel>
       <TabPanel value={value} index={4}>
+        {/* Content for Weekly Dailies */}
+        <Container>
+            <div className="position-relative" style={{ textAlign: 'left'}}>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '36px',
+                lineHeight: '36px',
+                fontWeight: 700
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                Week 1
+            </Typography>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '28px',
+                lineHeight: '36px',
+                fontWeight: 600
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                18th - 21st July
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            </div>
+            {/* <video controls>
+                <source src={videoFile} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video> */}
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px'
+            }} paragraph>
+            Brief explanation / summary of video.
+            </Typography>
+        </Container>
+        <Container>
+            <div className="position-relative" style={{ textAlign: 'left'}}>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '36px',
+                lineHeight: '36px',
+                fontWeight: 700
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                Week 2
+            </Typography>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '28px',
+                lineHeight: '36px',
+                fontWeight: 600
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                24th - 28th July
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            </div>
+            {/* <video controls>
+                <source src={videoFile} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video> */}
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px'
+            }} paragraph>
+            Brief explanation / summary of video.
+            </Typography>
+        </Container>
+        <Container>
+            <div className="position-relative" style={{ textAlign: 'left'}}>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '36px',
+                lineHeight: '36px',
+                fontWeight: 700
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                Week 3
+            </Typography>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '28px',
+                lineHeight: '36px',
+                fontWeight: 600
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                31st July - 4th August
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            </div>
+            {/* <video controls>
+                <source src={videoFile} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video> */}
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px'
+            }} paragraph>
+            Brief explanation / summary of video.
+            </Typography>
+        </Container>
+      </TabPanel>
+      <TabPanel value={value} index={5}>
         {/* Content for Weekly Pitch Videos */}
         <Container>
             <div className="position-relative" style={{ textAlign: 'left'}}>
