@@ -2,6 +2,10 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import styled from 'styled-components';
+import conceptualizationImg from './assets/conceptualization.png'; 
+import barclaysImg from './assets/barclays-office.jpg';
+import paperPrototypeImg from './assets/paper-prototype.jpeg';
+import highFidelityImg from './assets/high-fidelity-prototype.png';
 
 //Styled Component to override CSS
 const StyledVerticalTimeline = styled(VerticalTimeline)`
@@ -23,6 +27,7 @@ const ProjectJourneyPage = () => {
         >
           <h3 className="vertical-timeline-element-title">Conceptualization (18 July 2023)</h3>
           <p>We formulated questions for our partners at Barclays based on a Behaviour Driven Development Model. Our aim is to align our team's understanding of the final product's behavior, ensuring clarity in requirements and avoiding miscommunications.</p>
+          <img src={conceptualizationImg} alt="Conceptualization" style={{maxWidth: '100%', height: 'auto', display: 'block', paddingTop: '15px', marginLeft: 'auto', marginRight: 'auto'}}/>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -35,6 +40,7 @@ const ProjectJourneyPage = () => {
             In the feedback session, we realized past feedback provided was suggestive rather than assertive. Moving forward, 
             we'll justify our feedback with experience, research, or learned information for it to be constructive.
           </p>
+          <img src={barclaysImg} alt="Barclays Office" style={{maxWidth: '100%', height: 'auto', display: 'block', paddingTop: '15px', marginLeft: 'auto', marginRight: 'auto'}}/>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -70,6 +76,7 @@ const ProjectJourneyPage = () => {
             the application's functionality and flow, enabling us to spot potential user-experience challenges early on, 
             and make any necessary adjustments before we begin the actual development.
           </p>
+          <img src={paperPrototypeImg} alt="Paper Prototype" style={{maxWidth: '100%', height: 'auto', display: 'block', paddingTop: '15px', marginLeft: 'auto', marginRight: 'auto'}}/>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -82,6 +89,7 @@ const ProjectJourneyPage = () => {
             to creating high-fidelity wireframes using Figma. This transition allowed us to convert our preliminary sketches
             into more detailed representations.
           </p>
+          <img src={highFidelityImg} alt="High-Fidelity Wireframes" style={{maxWidth: '100%', height: 'auto', display: 'block', paddingTop: '15px', marginLeft: 'auto', marginRight: 'auto'}}/>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
