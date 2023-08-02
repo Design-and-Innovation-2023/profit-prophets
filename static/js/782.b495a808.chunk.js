@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkteam7b_app=self.webpackChunkteam7b_app||[]).push([[782],{76782:function(e,a,p){e.exports=p.p+"static/media/GeokTing.1546aa2e50922718cd38.jpg"}}]);

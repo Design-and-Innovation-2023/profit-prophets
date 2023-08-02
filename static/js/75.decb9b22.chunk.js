@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkteam7b_app=self.webpackChunkteam7b_app||[]).push([[75],{90075:function(e,p,t){e.exports=t.p+"static/media/globe-outline.bc8362fee0fdfd30cb1c.svg"}}]);

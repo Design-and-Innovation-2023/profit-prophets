@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkteam7b_app=self.webpackChunkteam7b_app||[]).push([[684],{17684:function(a,e,p){a.exports=p.p+"static/media/github-mark.6fa18895f6e6c7772cab.svg"}}]);

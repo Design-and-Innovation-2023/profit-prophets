@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkteam7b_app=self.webpackChunkteam7b_app||[]).push([[438],{95438:function(e,p,a){e.exports=a.p+"static/media/Enrique.20693c90c41d3a4091ce.jpg"}}]);

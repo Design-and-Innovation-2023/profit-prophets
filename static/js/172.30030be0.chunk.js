@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkteam7b_app=self.webpackChunkteam7b_app||[]).push([[172],{18172:function(a,e,p){a.exports=p.p+"static/media/brainstorming.8e6716743a156c291a48.png"}}]);
