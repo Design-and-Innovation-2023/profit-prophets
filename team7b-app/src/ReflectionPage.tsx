@@ -73,9 +73,15 @@ export default function ProjectJourneyPage() {
         <Tab label="Requirement Gathering" {...a11yProps(0)} />
         <Tab label="Prototyping" {...a11yProps(1)} />
         <Tab label="Refinement" {...a11yProps(2)} />
+<<<<<<< HEAD
         <Tab label="Roadshow" sx={{ borderBottom: 1, borderColor: 'divider' }} {...a11yProps(3)} />
         {/* Divider between Roadshow and Team Dailies */}
         <Tab label="Team Dailies" {...a11yProps(4)} />
+=======
+        <Tab label="Roadshow" {...a11yProps(3)} />
+        <Divider variant="middle" style={{display: 'block', height: 0.1, maxWidth: 210, backgroundColor: '#59596a'}}/>
+        <Tab label="Weekly Dailies" {...a11yProps(4)} />
+>>>>>>> e60aa526f6c430ecffbe4dd646e869c0ac9c25bf
         <Tab label="Weekly Pitch Videos" {...a11yProps(5)} />
       </Tabs>
       
@@ -284,9 +290,15 @@ export default function ProjectJourneyPage() {
         </Container>
       </TabPanel>
       <TabPanel value={value} index={4}>
+<<<<<<< HEAD
         {/* Content for Team Dailies */}
         <Container>
           <div className="position-relative" style={{ textAlign: 'left'}}>
+=======
+        {/* Content for Weekly Dailies */}
+        <Container>
+            <div className="position-relative" style={{ textAlign: 'left'}}>
+>>>>>>> e60aa526f6c430ecffbe4dd646e869c0ac9c25bf
             <Typography variant="h1" sx={{
                 fontFamily: '"Raleway", sans-serif',
                 fontSize: '36px',
@@ -301,15 +313,27 @@ export default function ProjectJourneyPage() {
                 lineHeight: '36px',
                 fontWeight: 600
                 }} style={{ color: '#59596a'  , margin: '20px'}}>
+<<<<<<< HEAD
                 Day 1 - 18th July
             </Typography>
             <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+=======
+                18th - 21st July
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            </div>
+            {/* <video controls>
+                <source src={videoFile} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video> */}
+>>>>>>> e60aa526f6c430ecffbe4dd646e869c0ac9c25bf
             <Typography variant="body2" sx={{
                 fontFamily: '"Open Sans", sans-serif',
                 lineHeight: '24px',
                 fontSize: '14px',
                 margin: '20px'
             }} paragraph>
+<<<<<<< HEAD
               Today we learnt about mental models and how it affects how we associate and percieve items, images and concepts. It was insighful as we felt that it could be applied to our product design too as we need to dertermine what our intended users percieve the user interface control to perform. I believe the actual term for it should be affordance of the interface.
 
               <br></br><br></br>As a team, its somehow applicable to how we communicate internally and externally too as we each have different mental models, especially with the partners as they have different backgrounds from us and may not have the same understanding as we do. Even within the team we also have differnt perceptions on how we should solve the idea or what the actual problem might be, as such we take steps to align everyone onto the same goal by building a common undertsanding. By figuratively laying all the cards in the table, we ensure that all our team members are alligned towards the common goal.
@@ -460,12 +484,23 @@ export default function ProjectJourneyPage() {
             }} paragraph>
             It is planned for the next week to test the prototype with our peers and continue improving on it while conceptulizing on additional features and fleshing out flow and interface of the various steps
             </Typography>
+=======
+            Brief explanation / summary of video.
+            </Typography>
+        </Container>
+        <Container>
+            <div className="position-relative" style={{ textAlign: 'left'}}>
+>>>>>>> e60aa526f6c430ecffbe4dd646e869c0ac9c25bf
             <Typography variant="h1" sx={{
                 fontFamily: '"Raleway", sans-serif',
                 fontSize: '36px',
                 lineHeight: '36px',
                 fontWeight: 700
+<<<<<<< HEAD
                 }} style={{ color: '#59596a'  , marginTop: '40px', marginLeft: '20px', marginBottom: '20px'}}>
+=======
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+>>>>>>> e60aa526f6c430ecffbe4dd646e869c0ac9c25bf
                 Week 2
             </Typography>
             <Typography variant="h1" sx={{
@@ -474,15 +509,27 @@ export default function ProjectJourneyPage() {
                 lineHeight: '36px',
                 fontWeight: 600
                 }} style={{ color: '#59596a'  , margin: '20px'}}>
+<<<<<<< HEAD
                 Day 5 - 24th July
             </Typography>
             <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+=======
+                24th - 28th July
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            </div>
+            {/* <video controls>
+                <source src={videoFile} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video> */}
+>>>>>>> e60aa526f6c430ecffbe4dd646e869c0ac9c25bf
             <Typography variant="body2" sx={{
                 fontFamily: '"Open Sans", sans-serif',
                 lineHeight: '24px',
                 fontSize: '14px',
                 margin: '20px'
             }} paragraph>
+<<<<<<< HEAD
               Today the team recieved some feedback from Greg, our partner at Barclays. Having shown Greg our initial prototype he provided some feedback that was extremely useful from an external perspective.
 
               <ol>
@@ -509,6 +556,20 @@ export default function ProjectJourneyPage() {
               <br></br><br></br>Within the team there were dissenting opinions on the compulsory submission of the bank statement as some felt that using the survey still provided the user some form of anonymity wherehas the bank statement contained a significant amount of Personally identifiable information (PII). This will be a discussion for the next day to determine what should we prioritize, accuracy of the recommendation or the anonymity for the user
 
               <br></br><br></br>Another feedback about the flow from the users reflected that there was no process for a user without an existing savings account. This was an oversight as the initial assumption was that the user will have a bank account before using the application to compare. As such, we’ve modified the onboarding parts of the prototype to include a flow where the user without a bank account will be presented with a survey that excludes all the banking related questions. This allows the application to gain some understanding of the user needs in a bank account before making recommendations instead of just recommending based on a set metric such as interest rate like other web applications do.
+=======
+            Brief explanation / summary of video.
+            </Typography>
+        </Container>
+        <Container>
+            <div className="position-relative" style={{ textAlign: 'left'}}>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '36px',
+                lineHeight: '36px',
+                fontWeight: 700
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                Week 3
+>>>>>>> e60aa526f6c430ecffbe4dd646e869c0ac9c25bf
             </Typography>
             <Typography variant="h1" sx={{
                 fontFamily: '"Raleway", sans-serif',
@@ -516,15 +577,27 @@ export default function ProjectJourneyPage() {
                 lineHeight: '36px',
                 fontWeight: 600
                 }} style={{ color: '#59596a'  , margin: '20px'}}>
+<<<<<<< HEAD
                 Day 6 - 25th July
             </Typography>
             <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+=======
+                31st July - 4th August
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            </div>
+            {/* <video controls>
+                <source src={videoFile} type="video/mp4" />
+                Your browser does not support the video tag.
+            </video> */}
+>>>>>>> e60aa526f6c430ecffbe4dd646e869c0ac9c25bf
             <Typography variant="body2" sx={{
                 fontFamily: '"Open Sans", sans-serif',
                 lineHeight: '24px',
                 fontSize: '14px',
                 margin: '20px'
             }} paragraph>
+<<<<<<< HEAD
               Today we learnt how to make choices between 2 different approaches to the problem. Something that resonated with the project was that both models (manual survey and automated scanning of bank statements) brought with it advantages that we wish to see in the application. That being giving the user control of their data while providing accurate recommendations based on their financial profile. However, since users may not be able to provide accurate information of their spending habits needed to recommend the most optimal bank account, it may affect the quality of the recommendation provided which may result in the users losing trust in the application.
               
               <br></br><br></br>On the flip side, by providing an artifact like their bank statements, we can accurately determine their spending habits, net worth and other required information. However, it may dissuade users from using the application as it is an extremely invasive approach and the amount of Personally Identifiable Information a bank statement contains may not be what the user wants to share or that they have discrete transactions they wish to keep private. Furthermore, users may not want to expose themselves to the risk of data leaks on the application or marketing adverts. Afterall the old saying is that if you are not paying for the product you are the product.
@@ -647,6 +720,10 @@ export default function ProjectJourneyPage() {
               <br></br><br></br>With the script and scenarios, it is our aim to obtain better quality feedback from the users as they will be able to explore the application interface more and provide us with feedback on items that we may have missed out and for them to vocalize what they are thinking and seeing so that we can understand more from the user perspective.
             </Typography>
           </div>
+=======
+            Brief explanation / summary of video.
+            </Typography>
+>>>>>>> e60aa526f6c430ecffbe4dd646e869c0ac9c25bf
         </Container>
       </TabPanel>
       <TabPanel value={value} index={5}>
