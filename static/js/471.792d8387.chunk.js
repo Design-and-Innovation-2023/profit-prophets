@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkteam7b_app=self.webpackChunkteam7b_app||[]).push([[471],{32744:function(a,e,p){a.exports=p.p+"static/media/KaiEn.1dcaebac4b3a09e6d865.jpg"}}]);

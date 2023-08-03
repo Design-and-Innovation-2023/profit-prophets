@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkteam7b_app=self.webpackChunkteam7b_app||[]).push([[725,325],{97725:function(e,r,o){o.r(r);o(72791),o(63325);var s=o(80184);r.default=function(e){var r=e.videoSource;return(0,s.jsx)("div",{className:"video-player",children:(0,s.jsxs)("video",{controls:!0,children:[(0,s.jsx)("source",{src:r,type:"video/mp4"}),"Your browser does not support the video tag."]})})}},63325:function(e,r,o){o.r(r),r.default={}}}]);
+//# sourceMappingURL=725.b7b26bf4.chunk.js.map
