@@ -9,74 +9,173 @@ import MetricsBreakdownImg from './assets/MetricsBreakdown.png';
 import PhoneNotificationImg from './assets/PhoneNotification.png';
 import BankAccountRedactImg from './assets/BankAccountRedact.png';
 import MetricsComparisonImg from './assets/MetricsComparison.png';
-import React, { useState } from 'react';
+import RateChaserLogo from './assets/RateChaser.png';
+import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { IoIosArrowDropdownCircle } from 'react-icons/io';
 
 const FlexContainer = styled('div')({
   display: 'flex',
   alignItems: 'center',
 });
 
+const textVariants = {
+  hidden: { opacity: 0, x: '-100vw' },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.2,
+      duration: 0.8,
+      type: 'spring',
+      stiffness: 120,
+    }
+  }
+};
+
+const buttonVariants = {
+  hidden: { y: 20, opacity: 0, x: '100vw' },
+  show: {
+    y: 0,
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 1,
+      duration: 0.8,
+      type: 'spring',
+      stiffness: 120,
+    }
+  }
+};
+
+const videoVariants = {
+  hidden: { opacity: 0, scale: 0.9 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delay: 1.2,
+      duration: 0.8,
+    }
+  }
+};
+
+const arrowVariants = {
+  hidden: { scale: 1 },
+  show: {
+    scale: [1, 1.2, 1],
+    transition: {
+      duration: 0.8,
+      repeat: Infinity
+    }
+  }
+}
+
 const HeroSection = () => {
+  const [videoSrc, setVideoSrc] = useState("");
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVideoSrc("https://www.youtube.com/embed/pV6oUA_CABI?autoplay=1");
+    }, 1000); // 1 second delay
+    return () => clearTimeout(timer); // cleanup on unmount
+  }, []);
+
   return (
     <section id="hero" className="d-flex align-items-center justify-content-center">
       <Container>
         <div className="position-relative" style={{ textAlign: 'left' , margin: '100px'}}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
           <div>
-            <Typography
-              variant="h1"
-              sx={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '45px',
-                lineHeight: '36px',
-                fontWeight: 700,
-                color: '#59596a',
-                marginBottom: '20px',
-              }}
-            paragraph>
-              RateChaser
-            </Typography>
-            <Typography
-              variant="h2"
-              sx={{
-                color: '#59596a',
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '19px',
-                lineHeight: '24px',
-                fontWeight: '500',
-                marginBottom: '20px',
-                paddingBottom: '20px',
-                position: 'relative',
-              }}
+            <motion.div
+              variants={textVariants}
+              initial="hidden"
+              animate="show"
             >
-              Navigate to different sections below to learn more about RateChaser and its benefits
-            </Typography>
-            <ScrollLink
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-70} // Adjust the offset value based on your layout
-              duration={500}
+              <img src={RateChaserLogo} alt="Logo" style={{ width: '50%', marginBottom: '30px'}} /> 
+              <Typography
+                variant="h1"
+                sx={{
+                  fontFamily: '"Raleway", sans-serif',
+                  fontSize: '45px',
+                  lineHeight: '36px',
+                  fontWeight: 700,
+                  color: '#59596a',
+                  marginBottom: '20px',
+                }}
+                paragraph
+              >
+                RateChaser
+              </Typography>
+              <Typography
+                variant="h2"
+                sx={{
+                  color: '#59596a',
+                  fontFamily: '"Raleway", sans-serif',
+                  fontSize: '19px',
+                  lineHeight: '24px',
+                  fontWeight: '500',
+                  marginBottom: '20px',
+                  paddingBottom: '20px',
+                  position: 'relative',
+                }}
+              >
+                Navigate to different sections below to learn more about RateChaser and its benefits
+              </Typography>
+            </motion.div>
+            <motion.div
+              variants={buttonVariants}
+              initial="hidden"
+              animate="show"
             >
-              <Button color="inherit" variant="outlined" style={{ color: '#59596a' }}>
-                Get Started
-              </Button>
-            </ScrollLink>
+              <ScrollLink
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70} // Adjust the offset value based on your layout
+                duration={500}
+              >
+                <Button color="inherit" variant="outlined" style={{ color: '#59596a' }}>
+                  Get Started
+                </Button>
+              </ScrollLink>
+            </motion.div>
           </div>
 
-          <div>
+          <motion.div
+            variants={videoVariants}
+            initial="hidden"
+            animate="show"
+          >
             <iframe 
-              width="560" 
-              height="315" 
-              src="https://www.youtube.com/embed/pV6oUA_CABI?autoplay=1" 
+              width="600" 
+              height="530" 
+              src={videoSrc}
               title="YouTube video player" 
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
             />
-          </div>
+          </motion.div>
         </div>
+        <motion.div
+          variants={arrowVariants}
+          initial="hidden"
+          animate="show"
+          style={{ position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)'}}
+        >
+          <ScrollLink
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <IoIosArrowDropdownCircle size={40} />
+          </ScrollLink>
+        </motion.div>
         </div>
       </Container>
     </section>
