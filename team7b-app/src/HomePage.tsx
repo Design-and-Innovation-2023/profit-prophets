@@ -41,7 +41,7 @@ const buttonVariants = {
     x: 0,
     transition: {
       delay: 1,
-      duration: 0.8,
+      duration: 1.2,
       type: 'spring',
       stiffness: 120,
     }
