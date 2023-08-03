@@ -4,6 +4,7 @@ import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import TwoColumnLayout from './TwoColumnLayout';
 import './AchievementsPage.css';
+import TeamPhoto from './assets/team-picture.jpg';
 import VideoPlayer from './VideoPlayer';
 // import BarclaysVisit from '../assets/barclays-visit.mp4';
 
@@ -51,8 +52,6 @@ const AchievementsPage = () => {
 
 
   return (
-
-    
     <Box sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex' }}>
       <Tabs
         orientation="vertical"
@@ -79,189 +78,11 @@ const AchievementsPage = () => {
           },
         }}
       >
-        <Tab label="Milestones" {...a11yProps(0)} />
-        <Tab label="Proud Moments" {...a11yProps(1)} />
+        <Tab label="Proud Moments" {...a11yProps(0)} />
         {/* <Divider variant="middle" style={{display: 'block', height: 0.1, maxWidth: 210, backgroundColor: '#59596a'}}/> */}
         {/* <Tab label="Weekly Pitch Videos" {...a11yProps(4)} /> */}
       </Tabs>
-      
       <TabPanel value={value} index={0}>
-        {/* Content for Milestones/Achievements */}
-            <Container>
-              <div className='milestones-page'>
-                <div className="position-relative" style={{ textAlign: 'left'}}>
-
-                  <Typography variant="h1" sx={{
-                      fontFamily: '"Raleway", sans-serif',
-                      fontSize: '36px',
-                      lineHeight: '36px',
-                      fontWeight: 700,
-                      }} style={{ color: '#59596a'  , margin: '20px'}}>
-                      Milestones
-                  </Typography>
-
-                  <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 185, backgroundColor: '#00b0f5'}}/>
-
-                  <Typography variant="body2" sx={{
-                      fontFamily: '"Open Sans", sans-serif',
-                      lineHeight: '24px',
-                      fontSize: '14px',
-                      margin: '20px'
-                  }} paragraph>
-                  Here are a few milestones throughout this Saving Rate Chaser project!
-                  </Typography>
-                  
-                  <div className="milestone">
-                  <Typography variant="h3" sx={{
-                              fontFamily: '"Raleway", sans-serif',
-                              fontSize: '28px',
-                              lineHeight: '28px',
-                              fontWeight: 700
-                              }} style={{ color: '#59596a', margin: '20px', marginTop: '30px', marginLeft: '20px', marginRight: '20px'}}>
-                              UoG Campus Visit
-                    </Typography>
-                    
-                    <TwoColumnLayout
-                      leftContent={
-                        <div>
-
-                          <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                          }} paragraph>
-                          Campus Visit description
-                          </Typography>
-                        </div>
-                      
-                    }
-
-                      rightContent={
-                        
-                        // TODO: Create slideshow of any images we have of the campus visit here
-                        // Images
-                        <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                        }} paragraph>
-                        Images here, slideshow
-                        </Typography>
-                    }
-                    />
-                  </div>
-                  <div className="milestone">
-                  <Typography variant="h3" sx={{
-                              fontFamily: '"Raleway", sans-serif',
-                              fontSize: '28px',
-                              lineHeight: '28px',
-                              fontWeight: 700
-                              }} style={{ color: '#59596a', margin: '20px', marginTop: '30px', marginLeft: '20px', marginRight: '20px'}}>
-                              Client Meeting at Barclays
-                    </Typography>
-                    
-                    <TwoColumnLayout
-                      leftContent={
-                        <div>
-
-                          <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                          }} paragraph>
-                          On 19th July, Profit Prophets visited Barclays Eagle Labs in Glasgow for the first meeting with our client, Gregory Peters to discuss the Saving Rate Chaser project.
-                          </Typography>
-                        </div>
-                      
-                    }
-
-                      rightContent={
-                        
-                        // TODO: Fix video player
-                        // <VideoPlayer videoSource={BarclaysVisit} />
-                        <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                        }} paragraph>
-                        Video here
-                        </Typography>
-                    }
-                    />
-                  </div>
-                  
-                  <div className="milestone">
-                  <Typography variant="h3" sx={{
-                              fontFamily: '"Raleway", sans-serif',
-                              fontSize: '28px',
-                              lineHeight: '28px',
-                              fontWeight: 700
-                              }} style={{ color: '#59596a', margin: '20px', marginTop: '30px', marginLeft: '20px', marginRight: '20px'}}>
-                              Saving Rate Chaser Poster
-                    </Typography>
-                    
-                    <TwoColumnLayout
-                      leftContent={
-                        <div>
-
-                          <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                          }} paragraph>
-                          Description, etc here
-                          </Typography>
-                        </div>
-                      
-                    }
-
-                      rightContent={
-                        
-                        // TODO: Insert poster here
-                        <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                        }} paragraph>
-                        Poster here
-                        </Typography>
-                    }
-                    />
-                  </div>
-
-                  {/* <div className="milestones-conclusion">
-                    <Typography variant="h3" sx={{
-                              fontFamily: '"Raleway", sans-serif',
-                              fontSize: '28px',
-                              lineHeight: '28px',
-                              fontWeight: 700
-                              }} style={{ color: '#59596a'  , margin: '20px'}}>
-                              Conclusion Header?
-                    </Typography>
-                    
-                    <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '80%', maxWidth: '600px', marginLeft: '20px', marginRight: '20px', marginTop: '20px'}} />
-                    
-                    <Typography variant="body2" sx={{
-                      fontFamily: '"Open Sans", sans-serif',
-                      lineHeight: '24px',
-                      fontSize: '14px',
-                      margin: '20px'
-                    }} paragraph>
-                    Conclusion text
-                    </Typography>
-                  </div> */}
-
-                </div>
-              </div>
-        </Container>
-      </TabPanel>
-      <TabPanel value={value} index={1}>
         {/* Content for Proud Moments */}
             <Container>
               <div className='proud-moments-page'>
@@ -289,45 +110,39 @@ const AchievementsPage = () => {
 
                   <div className="proud-moments-card">
                     <Typography variant="h3" sx={{
-                            fontFamily: '"Raleway", sans-serif',
-                            fontSize: '28px',
-                            lineHeight: '28px',
-                            fontWeight: 700
-                            }} style={{ color: '#59596a'  , margin: '20px'}}>
-                            Teammates, New and Old
-                  </Typography>
-                  
+                        fontFamily: '"Raleway", sans-serif',
+                        fontSize: '28px',
+                        lineHeight: '28px',
+                        fontWeight: 700
+                    }} style={{ color: '#59596a', margin: '20px' }}>
+                        Teammates, New and Old
+                    </Typography>
+                    <img src={TeamPhoto} alt="Team" style={{ width: '80%', maxWidth: '500px', marginLeft: '20px', marginRight: '20px', marginTop: '20px' }} />
                     <TwoColumnLayout
-                      leftContent={
-                        <div>
-
-                          {/* <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '80%', maxWidth: '600px', marginLeft: '20px', marginRight: '20px', marginTop: '20px'}} /> */}
-
-                          <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                          }} paragraph>
-                          Our team consists of six individuals, each bringing their unique skill sets and perspectives. At the outset, we faced the obstacle of varying degrees of familiarity with one another. 
-                          </Typography>
-                        </div>
-                      
-                    }
-
-                      rightContent={
-                        <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                        }} paragraph>
-                        We know the importance of cohesive teamwork and swiftly focused on establishing clear means of communication and rapport among each other. With a clear understanding of our mindsets, we embarked on our ambitious project with determination and a shared commitment to success.
-                        </Typography>
-                    }
+                        leftContent={
+                            <div>
+                                <Typography variant="body2" sx={{
+                                    fontFamily: '"Open Sans", sans-serif',
+                                    lineHeight: '24px',
+                                    fontSize: '14px',
+                                    margin: '20px'
+                                }} paragraph>
+                                    Our team consists of six individuals, each bringing their unique skill sets and perspectives. At the outset, we faced the obstacle of varying degrees of familiarity with one another.
+                                </Typography>
+                            </div>
+                        }
+                        rightContent={
+                            <Typography variant="body2" sx={{
+                                fontFamily: '"Open Sans", sans-serif',
+                                lineHeight: '24px',
+                                fontSize: '14px',
+                                margin: '20px'
+                            }} paragraph>
+                                We know the importance of cohesive teamwork and swiftly focused on establishing clear means of communication and rapport among each other. With a clear understanding of our mindsets, we embarked on our ambitious project with determination and a shared commitment to success.
+                            </Typography>
+                        }
                     />
-                  
-                  </div>
+                </div>
                   <div className="proud-moments-card">
                     <Typography variant="h3" sx={{
                             fontFamily: '"Raleway", sans-serif',
@@ -451,149 +266,6 @@ const AchievementsPage = () => {
                     }
                   />
                   </div>
-{/*                   
-                  <div className="proud-moments-card">
-                    <Typography variant="h3" sx={{
-                            fontFamily: '"Raleway", sans-serif',
-                            fontSize: '28px',
-                            lineHeight: '28px',
-                            fontWeight: 700
-                            }} style={{ color: '#59596a'  , margin: '20px'}}>
-                            Figma designs?
-                    </Typography>
-                        
-                    <TwoColumnLayout
-                      leftContent={
-                        <div>
-
-                          <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                          }} paragraph>
-                          Obstacle Text
-                          </Typography>
-                        </div>
-                    }
-
-                      rightContent={
-                      <div>
-                        <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                        }} paragraph>
-                        Solution Text
-                        </Typography>
-                      </div>
-                    }
-                  />
-                  </div>
-                  
-                  <div className="proud-moments-card">
-                    <Typography variant="h3" sx={{
-                            fontFamily: '"Raleway", sans-serif',
-                            fontSize: '28px',
-                            lineHeight: '28px',
-                            fontWeight: 700
-                            }} style={{ color: '#59596a'  , margin: '20px'}}>
-                            Website?
-                    </Typography>
-                        
-                    <TwoColumnLayout
-                      leftContent={
-                        <div>
-
-                          <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                          }} paragraph>
-                          Obstacle Text
-                          </Typography>
-                        </div>
-                    }
-
-                      rightContent={
-                      <div>
-                        <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                        }} paragraph>
-                        Solution Text
-                        </Typography>
-                      </div>
-                    }
-                  />
-                  </div>
-                  
-                  <div className="proud-moments-card">
-                    <Typography variant="h3" sx={{
-                            fontFamily: '"Raleway", sans-serif',
-                            fontSize: '28px',
-                            lineHeight: '28px',
-                            fontWeight: 700
-                            }} style={{ color: '#59596a'  , margin: '20px'}}>
-                            Poster?
-                    </Typography>
-                        
-                    <TwoColumnLayout
-                      leftContent={
-                        <div>
-
-                          <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                          }} paragraph>
-                          Obstacle Text
-                          </Typography>
-                        </div>
-                    }
-
-                      rightContent={
-                      <div>
-                        <Typography variant="body2" sx={{
-                            fontFamily: '"Open Sans", sans-serif',
-                            lineHeight: '24px',
-                            fontSize: '14px',
-                            margin: '20px'
-                        }} paragraph>
-                        Solution Text
-                        </Typography>
-                      </div>
-                    }
-                  />
-                  </div>
-
-                  <div className="proud-moments-conclusion">
-                    <Typography variant="h3" sx={{
-                              fontFamily: '"Raleway", sans-serif',
-                              fontSize: '28px',
-                              lineHeight: '28px',
-                              fontWeight: 700
-                              }} style={{ color: '#59596a'  , margin: '20px'}}>
-                              Conclusion Header?
-                    </Typography>
-                    
-                    <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="Logo" style={{ width: '80%', maxWidth: '600px', marginLeft: '20px', marginRight: '20px', marginTop: '20px'}} />
-                    
-                    <Typography variant="body2" sx={{
-                      fontFamily: '"Open Sans", sans-serif',
-                      lineHeight: '24px',
-                      fontSize: '14px',
-                      margin: '20px'
-                    }} paragraph>
-                    Conclusion text
-                    </Typography>
-                  </div> */}
-
                 </div>
               </div>
         </Container>
