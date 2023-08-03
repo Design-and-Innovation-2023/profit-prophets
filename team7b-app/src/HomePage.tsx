@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardContent, CardMedia, Container, Divider, Grid, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, CardMedia, Container, Divider, Grid, Typography, Modal } from '@mui/material';
 import { styled } from '@mui/system';
 import Carousel from "nuka-carousel";
 import { Link } from 'react-router-dom';
@@ -9,6 +9,7 @@ import MetricsBreakdownImg from './assets/MetricsBreakdown.png';
 import PhoneNotificationImg from './assets/PhoneNotification.png';
 import BankAccountRedactImg from './assets/BankAccountRedact.png';
 import MetricsComparisonImg from './assets/MetricsComparison.png';
+import React, { useState } from 'react';
 
 const FlexContainer = styled('div')({
   display: 'flex',
@@ -206,7 +207,7 @@ const features = [
   {
     title: 'Personalized Banking, Made Easy',
     description: 'Leverage a personalized bank account comparison, using metrics matched to your financial profile. Factor in projected annual savings for a more informed decision.',
-    images: [FinancialSurveyImg, MetricsComparisonImg]
+    images: [MetricsComparisonImg, MetricsBreakdownImg]
   },
   {
     title: 'Customized Alerts, Maximized Gains',
@@ -216,10 +217,49 @@ const features = [
 ];
 
 const FeaturesSection = () => {
+  const [open, setOpen] = useState(false);
+  const [modalImage, setModalImage] = useState('');
+
+  const StyledImage = styled('img')({
+    width: '70%',
+    objectFit: 'contain',
+    cursor: 'pointer',
+    transition: 'transform .2s',
+    '&:hover': {
+      transform: 'scale(1.1)',
+    },
+  });
+
+  const handleOpen = (image: string) => () => {
+    setModalImage(image);
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const modalBody = (
+    <Box
+      sx={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        width: 400,
+        bgcolor: 'background.paper',
+        boxShadow: 24,
+        p: 4,
+      }}
+    >
+      <img src={modalImage} alt="Selected" style={{ width: '100%', objectFit: 'contain' }} />
+    </Box>
+  );
+
   return (
     <section id="features" className="features">
       <Container>
-        <div className="row" style={{ textAlign: 'center' , margin: '100px'}}>
+        <div className="row" style={{ textAlign: 'center', margin: '100px' }}>
           <Typography variant="h2" sx={{
             color: '#59596a',
             fontFamily: '"Raleway", sans-serif',
@@ -232,55 +272,59 @@ const FeaturesSection = () => {
           }}>
             Features
           </Typography>
-          <Divider variant="middle" style={{display: 'block', margin: '0 auto', height: 2, maxWidth: 60, backgroundColor: '#00b0f5'}}/>
-          <div className="col-lg-12 pt-4 pt-lg-0" style={{margin: '30px'}}>
+          <Divider variant="middle" style={{ display: 'block', margin: '0 auto', height: 2, maxWidth: 60, backgroundColor: '#00b0f5' }} />
+          <div className="col-lg-12 pt-4 pt-lg-0" style={{ margin: '30px' }}>
             <Grid container spacing={6}>
               {features.map((feature, index) => (
-                <Grid item xs={12} key={index} direction={index % 2 === 0 ? "row" : "row-reverse"} container>
-                  <Grid item xs={6}>
+                <Grid item xs={6} key={index}>
+                  <Card sx={{ height: '100%' }} style={{ backgroundColor: '#f0f8ff' }}>
+                    <CardContent>
+                      <Typography sx={{
+                        fontFamily: '"Raleway", sans-serif',
+                        fontWeight: 600,
+                        margin: '10px 0 15px 0',
+                        fontSize: '22px',
+                        lineHeight: 1.2
+                      }} style={{ color: '#59596a', textAlign: 'center' }}>
+                        {feature.title}
+                      </Typography>
+                      <Typography variant="body2" sx={{
+                        fontFamily: '"Open Sans", sans-serif',
+                        lineHeight: '24px',
+                        fontSize: '14px'
+                      }} style={{ textAlign: 'justify' }} paragraph>
+                        {feature.description}
+                      </Typography>
+                    </CardContent>
                     <Carousel>
-                      {feature.images.map((image, imageIndex) => (
-                        <img
-                          key={imageIndex}
-                          src={image}
-                          alt={feature.title}
-                          style={{ width: '100%', objectFit: 'contain' }}
-                        />
-                      ))}
+                    {feature.images.map((image, imageIndex) => (
+                      <StyledImage
+                        key={imageIndex}
+                        src={image}
+                        alt={feature.title}
+                        onClick={handleOpen(image)}
+                        style={{marginLeft: '60px'}}
+                      />
+                    ))}
                     </Carousel>
-                  </Grid>
-                  <Grid item xs={6}>
-                    <Card sx={{ height: '100%' }} style={{backgroundColor: '#f0f8ff'}}>
-                      <CardContent>
-                        <Typography sx={{
-                          fontFamily: '"Raleway", sans-serif',
-                          fontWeight: 600,
-                          margin: '10px 0 15px 0',
-                          fontSize: '22px',
-                          lineHeight: 1.2
-                        }} style={{ color: '#59596a', textAlign: 'center'}}>
-                          {feature.title}
-                        </Typography>
-                        <Typography variant="body2" sx={{
-                          fontFamily: '"Open Sans", sans-serif',
-                          lineHeight: '24px',
-                          fontSize: '14px'
-                        }} style={{ textAlign: 'justify'}} paragraph>
-                          {feature.description}
-                        </Typography>
-                      </CardContent>
-                    </Card>
-                  </Grid>
+                  </Card>
                 </Grid>
               ))}
             </Grid>
           </div>
         </div>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          {modalBody}
+        </Modal>
       </Container>
     </section>
   );
 };
-
 
 // const CarouselSection = () => {
 //   const photos = [
