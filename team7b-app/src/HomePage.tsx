@@ -425,37 +425,39 @@ const FeaturesSection = () => {
   );
 };
 
-// const CarouselSection = () => {
-//   const photos = [
-//     process.env.PUBLIC_URL + '/teamPicture.jpg',
-//     process.env.PUBLIC_URL + '/placeholder.jpeg',
-//     process.env.PUBLIC_URL + '/teamPicture.jpg',
-//     process.env.PUBLIC_URL + '/placeholder.jpeg',
-//     process.env.PUBLIC_URL + '/teamPicture.jpg',
-//     process.env.PUBLIC_URL + '/placeholder.jpeg',
-//   ];
-
-//   return (
-//     <div style={{
-//       display: 'flex',
-//       justifyContent: 'center',
-//       alignItems: 'center',
-//       height: '350px',
-//     }}>
-//       <Carousel autoplay={true} autoplayInterval={7000} wrapAround={true} style={{ maxWidth: '600px', width: '100%', height: '100%', margin: '20px auto', textAlign: 'center' }}>
-//         {photos.map((photo, index) => (
-//           <img
-//             key={index}
-//             src={photo}
-//             alt={`Photo${index + 1}`}
-//             style={{ maxHeight: '500px', width: '100%', margin: 'auto' }}
-//           />
-//         ))}
-//       </Carousel>
-//     </div>
-//   );
-// };
-
+const FigmaPrototypesSection = () => {
+  return (
+    <section id="figma-prototypes" className="figma-prototypes">
+      <Container>
+        <div className="row" style={{ textAlign: 'center', margin: '100px' }}>
+          <Typography variant="h2" sx={{
+            color: '#59596a',
+            fontFamily: '"Raleway", sans-serif',
+            fontSize: '32px',
+            fontWeight: 'bold',
+            textTransform: 'uppercase',
+            paddingBottom: '10px',
+            position: 'relative',
+            margin: '10px'
+          }}>
+            Figma Prototypes
+          </Typography>
+          <Divider variant="middle" style={{ display: 'block', margin: '0 auto', height: 2, maxWidth: 60, backgroundColor: '#00b0f5' }} />
+          <div className="col-lg-12 pt-4 pt-lg-0" style={{ margin: '30px' }}>
+            <h3>Web Prototype</h3>
+            <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="450" 
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FIKFWQJB7eFrtgEn9gdR73J%2FRateChaser-Web-Prototype%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D354-30954%26viewport%3D161%252C314%252C0.03%26t%3DeUCgx21SLPCFPC14-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D354%253A30954%26mode%3Ddesign" 
+            allowFullScreen></iframe>
+            <h3>Mobile Prototype</h3>
+            <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="450" 
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fohz9Ur0kXRH9fGY6ndAuqA%2FRateChaser-Mobile-Prototype%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D210-2247%26viewport%3D-718%252C346%252C0.13%26t%3DG7GOHY3dz4WJyYbD-1%26scaling%3Dscale-down%26starting-point-node-id%3D210%253A2247%26mode%3Ddesign"
+             allowFullScreen></iframe>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+};
 
 const ProjectSection = () => {
   return (
@@ -503,6 +505,7 @@ const HomePage = () => {
       <HeroSection />
       <AboutSection />
       <FeaturesSection />
+      <FigmaPrototypesSection />
       <ProjectSection />
     </Box>
   );
