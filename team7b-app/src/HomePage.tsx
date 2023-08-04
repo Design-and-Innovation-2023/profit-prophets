@@ -9,74 +9,173 @@ import MetricsBreakdownImg from './assets/MetricsBreakdown.png';
 import PhoneNotificationImg from './assets/PhoneNotification.png';
 import BankAccountRedactImg from './assets/BankAccountRedact.png';
 import MetricsComparisonImg from './assets/MetricsComparison.png';
-import React, { useState } from 'react';
+import RateChaserLogo from './assets/RateChaser.png';
+import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { IoIosArrowDropdownCircle } from 'react-icons/io';
 
 const FlexContainer = styled('div')({
   display: 'flex',
   alignItems: 'center',
 });
 
+const textVariants = {
+  hidden: { opacity: 0, x: '-100vw' },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 0.2,
+      duration: 0.8,
+      type: 'spring',
+      stiffness: 120,
+    }
+  }
+};
+
+const buttonVariants = {
+  hidden: { y: 20, opacity: 0, x: '100vw' },
+  show: {
+    y: 0,
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: 1,
+      duration: 1.2,
+      type: 'spring',
+      stiffness: 120,
+    }
+  }
+};
+
+const videoVariants = {
+  hidden: { opacity: 0, scale: 0.9 },
+  show: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delay: 1.2,
+      duration: 0.8,
+    }
+  }
+};
+
+const arrowVariants = {
+  hidden: { scale: 1 },
+  show: {
+    scale: [1, 1.2, 1],
+    transition: {
+      duration: 0.8,
+      repeat: Infinity
+    }
+  }
+}
+
 const HeroSection = () => {
+  const [videoSrc, setVideoSrc] = useState("");
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setVideoSrc("https://www.youtube.com/embed/pV6oUA_CABI?autoplay=1");
+    }, 1000); // 1 second delay
+    return () => clearTimeout(timer); // cleanup on unmount
+  }, []);
+
   return (
     <section id="hero" className="d-flex align-items-center justify-content-center">
       <Container>
         <div className="position-relative" style={{ textAlign: 'left' , margin: '100px'}}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
           <div>
-            <Typography
-              variant="h1"
-              sx={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '45px',
-                lineHeight: '36px',
-                fontWeight: 700,
-                color: '#59596a',
-                marginBottom: '20px',
-              }}
-            paragraph>
-              RateChaser
-            </Typography>
-            <Typography
-              variant="h2"
-              sx={{
-                color: '#59596a',
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '19px',
-                lineHeight: '24px',
-                fontWeight: '500',
-                marginBottom: '20px',
-                paddingBottom: '20px',
-                position: 'relative',
-              }}
+            <motion.div
+              variants={textVariants}
+              initial="hidden"
+              animate="show"
             >
-              Navigate to different sections below to learn more about RateChaser and its benefits
-            </Typography>
-            <ScrollLink
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-70} // Adjust the offset value based on your layout
-              duration={500}
+              <img src={RateChaserLogo} alt="Logo" style={{ width: '50%', marginBottom: '30px'}} /> 
+              <Typography
+                variant="h1"
+                sx={{
+                  fontFamily: '"Raleway", sans-serif',
+                  fontSize: '45px',
+                  lineHeight: '36px',
+                  fontWeight: 700,
+                  color: '#59596a',
+                  marginBottom: '20px',
+                }}
+                paragraph
+              >
+                RateChaser
+              </Typography>
+              <Typography
+                variant="h2"
+                sx={{
+                  color: '#59596a',
+                  fontFamily: '"Raleway", sans-serif',
+                  fontSize: '19px',
+                  lineHeight: '24px',
+                  fontWeight: '500',
+                  marginBottom: '20px',
+                  paddingBottom: '20px',
+                  position: 'relative',
+                }}
+              >
+                Navigate to different sections below to learn more about RateChaser and its benefits
+              </Typography>
+            </motion.div>
+            <motion.div
+              variants={buttonVariants}
+              initial="hidden"
+              animate="show"
             >
-              <Button color="inherit" variant="outlined" style={{ color: '#59596a' }}>
-                Get Started
-              </Button>
-            </ScrollLink>
+              <ScrollLink
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-70} // Adjust the offset value based on your layout
+                duration={500}
+              >
+                <Button color="inherit" variant="outlined" style={{ color: '#59596a' }}>
+                  Get Started
+                </Button>
+              </ScrollLink>
+            </motion.div>
           </div>
 
-          <div>
+          <motion.div
+            variants={videoVariants}
+            initial="hidden"
+            animate="show"
+          >
             <iframe 
-              width="560" 
-              height="315" 
-              src="https://www.youtube.com/embed/pV6oUA_CABI?autoplay=1" 
+              width="600" 
+              height="530" 
+              src={videoSrc}
               title="YouTube video player" 
               frameBorder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
             />
-          </div>
+          </motion.div>
         </div>
+        <motion.div
+          variants={arrowVariants}
+          initial="hidden"
+          animate="show"
+          style={{ position: 'absolute', bottom: '20px', left: '50%', transform: 'translateX(-50%)'}}
+        >
+          <ScrollLink
+            activeClass="active"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <IoIosArrowDropdownCircle size={40} />
+          </ScrollLink>
+        </motion.div>
         </div>
       </Container>
     </section>
@@ -326,37 +425,39 @@ const FeaturesSection = () => {
   );
 };
 
-// const CarouselSection = () => {
-//   const photos = [
-//     process.env.PUBLIC_URL + '/teamPicture.jpg',
-//     process.env.PUBLIC_URL + '/placeholder.jpeg',
-//     process.env.PUBLIC_URL + '/teamPicture.jpg',
-//     process.env.PUBLIC_URL + '/placeholder.jpeg',
-//     process.env.PUBLIC_URL + '/teamPicture.jpg',
-//     process.env.PUBLIC_URL + '/placeholder.jpeg',
-//   ];
-
-//   return (
-//     <div style={{
-//       display: 'flex',
-//       justifyContent: 'center',
-//       alignItems: 'center',
-//       height: '350px',
-//     }}>
-//       <Carousel autoplay={true} autoplayInterval={7000} wrapAround={true} style={{ maxWidth: '600px', width: '100%', height: '100%', margin: '20px auto', textAlign: 'center' }}>
-//         {photos.map((photo, index) => (
-//           <img
-//             key={index}
-//             src={photo}
-//             alt={`Photo${index + 1}`}
-//             style={{ maxHeight: '500px', width: '100%', margin: 'auto' }}
-//           />
-//         ))}
-//       </Carousel>
-//     </div>
-//   );
-// };
-
+const FigmaPrototypesSection = () => {
+  return (
+    <section id="figma-prototypes" className="figma-prototypes">
+      <Container>
+        <div className="row" style={{ textAlign: 'center', margin: '100px' }}>
+          <Typography variant="h2" sx={{
+            color: '#59596a',
+            fontFamily: '"Raleway", sans-serif',
+            fontSize: '32px',
+            fontWeight: 'bold',
+            textTransform: 'uppercase',
+            paddingBottom: '10px',
+            position: 'relative',
+            margin: '10px'
+          }}>
+            Figma Prototypes
+          </Typography>
+          <Divider variant="middle" style={{ display: 'block', margin: '0 auto', height: 2, maxWidth: 60, backgroundColor: '#00b0f5' }} />
+          <div className="col-lg-12 pt-4 pt-lg-0" style={{ margin: '30px' }}>
+            <h3>Web Prototype</h3>
+            <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="450" 
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FIKFWQJB7eFrtgEn9gdR73J%2FRateChaser-Web-Prototype%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D354-30954%26viewport%3D161%252C314%252C0.03%26t%3DeUCgx21SLPCFPC14-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D354%253A30954%26mode%3Ddesign" 
+            allowFullScreen></iframe>
+            <h3>Mobile Prototype</h3>
+            <iframe style={{border: '1px solid rgba(0, 0, 0, 0.1)'}} width="800" height="450" 
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fohz9Ur0kXRH9fGY6ndAuqA%2FRateChaser-Mobile-Prototype%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D210-2247%26viewport%3D-718%252C346%252C0.13%26t%3DG7GOHY3dz4WJyYbD-1%26scaling%3Dscale-down%26starting-point-node-id%3D210%253A2247%26mode%3Ddesign"
+             allowFullScreen></iframe>
+          </div>
+        </div>
+      </Container>
+    </section>
+  );
+};
 
 const ProjectSection = () => {
   return (
@@ -404,6 +505,7 @@ const HomePage = () => {
       <HeroSection />
       <AboutSection />
       <FeaturesSection />
+      <FigmaPrototypesSection />
       <ProjectSection />
     </Box>
   );

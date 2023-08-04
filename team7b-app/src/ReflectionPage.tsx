@@ -2,6 +2,8 @@ import { Box, Container, Divider, Typography } from '@mui/material';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import * as React from 'react';
+import conceptualizationImg from './assets/conceptualization.png'; 
+import TeamContractPDF from './assets/team-contract.pdf';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -70,15 +72,15 @@ export default function ProjectJourneyPage() {
           },
         }}
       >
-        <Tab label="Requirement Gathering" {...a11yProps(0)} />
-        <Tab label="Prototyping" {...a11yProps(1)} />
-        <Tab label="Refinement" {...a11yProps(2)} />
-        <Tab label="Roadshow" sx={{ borderBottom: 1, borderColor: 'divider' }} {...a11yProps(3)} />
+        <Tab label="Team Contract" {...a11yProps(0)} />
+        <Tab label="Requirement Gathering" {...a11yProps(1)} />
+        <Tab label="Prototyping" {...a11yProps(2)} />
+        <Tab label="Refinement" {...a11yProps(3)} />
+        <Tab label="Roadshow" sx={{ borderBottom: 1, borderColor: 'divider' }} {...a11yProps(4)} />
         {/* Divider between Roadshow and Team Dailies */}
-        <Tab label="Team Dailies" {...a11yProps(4)} />
-        <Tab label="Weekly Pitch Videos" {...a11yProps(5)} />
+        <Tab label="Team Dailies" {...a11yProps(5)} />
+        <Tab label="Weekly Pitch Videos" {...a11yProps(6)} />
       </Tabs>
-      
       <TabPanel value={value} index={0}>
         {/* Content for Requirement Gathering */}
         <Container>
@@ -89,7 +91,29 @@ export default function ProjectJourneyPage() {
                 lineHeight: '36px',
                 fontWeight: 700
                 }} style={{ color: '#59596a'  , margin: '20px'}}>
-                18th - 19th July
+                Team Contract
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            {/* Embedding PDF file */}
+            <embed 
+                src={TeamContractPDF}
+                type="application/pdf" 
+                style={{width: '400%', height: '600px'}}/>
+          </div>
+        </Container>
+      </TabPanel>
+
+      <TabPanel value={value} index={1}>
+        {/* Content for Requirement Gathering */}
+        <Container>
+            <div className="position-relative" style={{ textAlign: 'left'}}>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '36px',
+                lineHeight: '36px',
+                fontWeight: 700
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                Requirements Gathering
             </Typography>
             <Typography variant="h1" sx={{
                 fontFamily: '"Raleway", sans-serif',
@@ -97,7 +121,7 @@ export default function ProjectJourneyPage() {
                 lineHeight: '36px',
                 fontWeight: 600
                 }} style={{ color: '#59596a'  , margin: '20px'}}>
-                Day 1 - 18th July
+                18th July 2023
             </Typography>
             <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
             <Typography variant="body2" sx={{
@@ -106,9 +130,17 @@ export default function ProjectJourneyPage() {
                 fontSize: '14px',
                 margin: '20px'
             }} paragraph>
-            Populate with dailies, maybe summarise or rephrase in more of a reflection format.
+      The team studied the concept of mental models and their influence on perception and association. This learning was particularly relevant to our product design process, particularly in understanding how our target users perceive the affordances of the user interface. <br/><br/>
+
+      The concept of mental models also resonated with our internal and external communication processes. Since every team member and partner comes from diverse backgrounds with distinct mental models, understanding these differences and aligning them towards a common goal is vital. We employ a transparent approach, ensuring everyone is on the same page about our shared objectives.
+
+      To streamline communication with our partners and avoid misinterpretation, we devised a Behavior Driven Development Model. Rather than focusing on distinct features, we centred our approach on the expected behavior of the final product. We used Google Jamboard for collaborative brainstorming and integrated a large language model to assess the quality of our questions critically.
+
+      <br/><br/>
+
+      Our next steps include meeting our partners to gather requirements, scope, and intended behaviors. Afterwards, we will collaboratively decide on the direction of our first prototype and allocate tasks accordingly.
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="dailies image" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
+            <img src={conceptualizationImg} alt="dailies image" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
             <Typography variant="h1" sx={{
                 fontFamily: '"Raleway", sans-serif',
                 fontSize: '28px',
@@ -130,7 +162,7 @@ export default function ProjectJourneyPage() {
             </div>
         </Container>
       </TabPanel>
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={2}>
         {/* Content for Prototyping */}
         <Container>
             <div className="position-relative" style={{ textAlign: 'left'}}>
@@ -181,7 +213,7 @@ export default function ProjectJourneyPage() {
             </div>
         </Container>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={3}>
         {/* Content for Refinement */}
         <Container>
             <div className="position-relative" style={{ textAlign: 'left'}}>
@@ -232,7 +264,7 @@ export default function ProjectJourneyPage() {
             </div>
         </Container>
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={4}>
         {/* Content for Roadshow */}
         <Container>
             <div className="position-relative" style={{ textAlign: 'left'}}>
@@ -283,7 +315,7 @@ export default function ProjectJourneyPage() {
             </div>
         </Container>
       </TabPanel>
-      <TabPanel value={value} index={4}>
+      <TabPanel value={value} index={5}>
         {/* Content for Team Dailies */}
         <Container>
           <div className="position-relative" style={{ textAlign: 'left'}}>
@@ -771,7 +803,7 @@ export default function ProjectJourneyPage() {
           </div>
         </Container>
       </TabPanel>
-      <TabPanel value={value} index={5}>
+      <TabPanel value={value} index={6}>
         {/* Content for Weekly Pitch Videos */}
         <Container>
             <div className="position-relative" style={{ textAlign: 'left'}}>
