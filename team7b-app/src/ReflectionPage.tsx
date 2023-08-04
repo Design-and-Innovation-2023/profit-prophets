@@ -646,6 +646,128 @@ export default function ProjectJourneyPage() {
 
               <br></br><br></br>With the script and scenarios, it is our aim to obtain better quality feedback from the users as they will be able to explore the application interface more and provide us with feedback on items that we may have missed out and for them to vocalize what they are thinking and seeing so that we can understand more from the user perspective.
             </Typography>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '36px',
+                lineHeight: '36px',
+                fontWeight: 700
+                }} style={{ color: '#59596a'  , marginTop: '40px', marginLeft: '20px', marginBottom: '20px'}}>
+                Week 3
+            </Typography>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '28px',
+                lineHeight: '36px',
+                fontWeight: 600
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                Day 10 - 31st July
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px'
+            }} paragraph>
+              Today the team focused on adding in a means to notify users when there are account offerings that are better than their existing accounts. Typically most applications perform push notifications instantly when there is a need to inform the user as it’s the most efficient both computationally and for the users as there isn’t a need to design any form of algorithm nor use excess resources to maintain the users preference and match them while the users get instantly notified about something that benefits them. However, in our situation, as banks often release products simultaneously or in quick succession, as such, instantly notifying the users after the analysis may result in the content of the notifications being inaccurate or multiple notifications which may annoy the users, leading to distrust and annoyance. Hence, its decided to offer the user the ability to determine the frequency of the notifications and from the feedback from a previous prototype where users wish to have the ability to choose what platforms they can access the chatbot prototype with, the choice of the medium of the notification: (Push notification for the mobile application, Email, Whatsapp, Telegram for both web and mobile).
+
+              <br></br><br></br>User Preference Form
+            </Typography>
+            <img src={process.env.PUBLIC_URL + '/day10image1.png'} alt="dailies image" style={{ width: '100%', maxWidth: '400px', marginLeft: '20px'}} />
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px'
+            }} paragraph>
+              Next, we worked to flesh out any final issues on our prototype. First was ensuring that users had a way to switch between their existing accounts, Next was to unify the interface between both the mobile and web to ensure users of both platforms can seamlessly transition between either platform. This was achieved by using similar design language for both platforms in terms of the placement, labeling and ensuring the functionality is uniform between both platforms with exception of comparisons where due to the limits of the mobile screen size, we downscale the number of simultaneous accounts compared to one in order to provide a smoother mobile interface for the user where they could switch between the suggested accounts compared by swiping on the carousel.
+
+              <br></br><br></br>Mobile Interface
+            </Typography>
+            <img src={process.env.PUBLIC_URL + '/day10image2.png'} alt="dailies image" style={{ width: '100%', maxWidth: '200px', marginLeft: '20px'}} />
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px'
+            }} paragraph>
+              Web Interface
+            </Typography>
+            <img src={process.env.PUBLIC_URL + '/day10image3.png'} alt="dailies image" style={{ width: '100%', maxWidth: '400px', marginLeft: '20px'}} />
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px'
+            }} paragraph>
+              Moving forward, we finalized the interface for both platforms and will begin final usability testing with our users, this time done properly with the scripts and scenarios
+            </Typography>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '28px',
+                lineHeight: '36px',
+                fontWeight: 600
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                Day 11 - 1st August
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px'
+            }} paragraph>
+              Today the team received feedback from Greg about our proposed tech stack. He was agreeable with the tech stack we’ve proposed for implementation but forewarned us that it was overly reliant on Google technology and may face cost issues when massively scaling up in the long run. While we agreed that it was heavy on Google technology, we disagreed on the fact that creating services provided by firebase from scratch will cost significantly more due to the need for development, testing and deployment of such services along with the underlying infrastructure needed to ensure the reliability, availability and robustness of said system. Thus, we justified our points to Greg from email and await his reply.
+
+              <br></br><br></br>Next, we performed usability tests with our users along with completing the poster for our exhibition. This time, we had our users pretend to be a student with a Tesco bank account with 1000 pounds in savings and a yorkshire bank account with 1000 pounds with a task to determine if it is beneficial to change either bank accounts to a new account. Of the 5 users that we tested with, 4 were able to successfully perform the task without any assistance from the team while one needed some assistance when they kept attempting to click on the “add to comparison” button. As such, the team decided to make slight UI changes that are synonymous with a disabled button. We gray-out the button when the limit of comparisons is reached and inform the users of the remedial steps using a tooltip to inform them to remove one of the bank accounts they intend to compare. This way, the user is given clear indications on the state of the application and the next action they need to take.
+
+              <br></br><br></br>Interface When Maximum comparison reached
+            </Typography>
+            <img src={process.env.PUBLIC_URL + '/day11image.png'} alt="dailies image" style={{ width: '100%', maxWidth: '400px', marginLeft: '20px'}} />
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px'
+            }} paragraph>
+              Completing the usability tests, we focused on completing the poster to provide a high-level overview of the problem and our conceptualized solution. One dilemma was if we should take the approach of an academic poster where we focused more on describing the solutions and steps taken or a product poster where we focused on “selling” the product. On one hand, it will show our design thinking process to the guests at the exhibition and how it shaped the solution while on the other hand, we will be able to focus on what we conceptualized, why it is there and how it benefits our users. After deliberation, we decided to focus on the product and how it helps to alleviate the problems instead of focusing on the route there and provide a link to our webpage where those who are interested in understanding the design thinking process and view the artifacts used at their own pace as people who visit exhibitions often just want to get a high level overview of all the exhibits and determine if they are interested to learn more about any particular exhibits so that they don’t miss out on anything. Taking our “audience” profile into consideration we designed our poster in a way that clearly shows the issues users previously faced and how our solution and its various features are used to alleviate them.
+
+              <br></br><br></br>Heading into the next day, we will focus on getting our design thinking process documented on our website
+            </Typography>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '28px',
+                lineHeight: '36px',
+                fontWeight: 600
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                Day 12 - 2nd August
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px'
+            }} paragraph>
+              Today, the team had an impromptu meeting with Greg to show the final progress of the prototype. He was impressed by the team’s final prototype and understands that we were not able to really demonstrate the Drag and Drop functionality due to the limitations of Figma. He did provide some feedback where there were some cosmetic issues and that the button of the removal of accounts needs to be more obvious for users. While we did not encounter this issue during testing with the users, we took the feedback and made slight changes to the prototype for the final showcase. Next we worked on the website to showcase the design thinking. One train of thought we followed was that how do we show what we have done and as such, we decided to incorporate the short trailer we made for the meta project as part of the landing page which then leads to the features of the conceptualized solution and to the project journey where we provide a high level understanding of what we did across the 3 weeks visualized in a timeline and finally end at the reflections where we reflect on our journey.
+            </Typography>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '28px',
+                lineHeight: '36px',
+                fontWeight: 600
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                Day 13 - 3rd August
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px'
+            }} paragraph>
+              Today is the day of the showcase!, After many iterations of the prototype, we finally have something that will see the light. Having people experience our prototype outside of the controlled environment was an exciting yet stressful experience as we were hoping that it will not be broken by user activity! It was also an opportunity to gain feedback from others apart from our peers. One of the feedback that i found most helpful was that at different stages of our lives, we have different financial goals and the type of accounts that our users have does reflect them and as such, it will be extremely helpful to learn about what the goals of the users are too as possibly suggesting them to open multiple accounts, for example, a fixed term account and a typical instant access savings account may help them achieve their goals such as buying a house or building a college fund. As we showcased our prototype to various users, it was also insightful to see them interacting with the application and commenting that they appreciate the traffic light style of coloring as it was extremely obvious which account was superior. Heading forward, some possible enhancements that can be taken to improve the solution and expand the userbase could be querying the users about their financial goals and uses for existing accounts and taking that into account before making recommendations. All in all, it was an extremely fulfilling experience to see the users using the application without much hiccups which made the countless hours of testing and modifying worthwhile .
+            </Typography>
           </div>
         </Container>
       </TabPanel>
@@ -698,36 +820,6 @@ export default function ProjectJourneyPage() {
                 fontWeight: 600
                 }} style={{ color: '#59596a'  , margin: '20px'}}>
                 24th - 28th July
-            </Typography>
-            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
-            </div>
-            <iframe
-              width="700px"
-              height="400px"
-              src="https://www.youtube.com/embed/rfQ9PMgVIIo"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-              allowFullScreen
-              style={{margin: '20px' }}
-            ></iframe>
-        </Container>
-        <Container>
-            <div className="position-relative" style={{ textAlign: 'left'}}>
-            <Typography variant="h1" sx={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '36px',
-                lineHeight: '36px',
-                fontWeight: 700
-                }} style={{ color: '#59596a'  , margin: '20px'}}>
-                Week 3
-            </Typography>
-            <Typography variant="h1" sx={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '28px',
-                lineHeight: '36px',
-                fontWeight: 600
-                }} style={{ color: '#59596a'  , margin: '20px'}}>
-                31st July - 4th August
             </Typography>
             <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
             </div>
