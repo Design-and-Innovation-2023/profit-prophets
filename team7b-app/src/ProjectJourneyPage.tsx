@@ -7,6 +7,7 @@ import barclaysImg from './assets/barclays-office.jpg';
 import paperPrototypeImg from './assets/paper-prototype.jpeg';
 import highFidelityImg from './assets/high-fidelity-prototype.png';
 import thinkAloudImg from './assets/think-aloud.jpg';
+import MeetingMinutesPDF from './assets/barclays-meeting-minutes.pdf';
 
 //Styled Component to override CSS
 const StyledVerticalTimeline = styled(VerticalTimeline)`
@@ -42,6 +43,20 @@ const ProjectJourneyPage = () => {
             we'll justify our feedback with experience, research, or learned information for it to be constructive.
           </p>
           <img src={barclaysImg} alt="Barclays Office" style={{maxWidth: '100%', height: 'auto', display: 'block', paddingTop: '15px', marginLeft: 'auto', marginRight: 'auto'}}/>
+          <iframe
+              width="465px"
+              height="400px"
+              src="https://www.youtube.com/embed/NAZb09ZpyVY"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+              allowFullScreen
+              style={{marginTop: '15px' }}
+            ></iframe>
+          <p style={{marginBottom: '5px'}}>Meeting Minutes</p>
+          <embed 
+                src={MeetingMinutesPDF}
+                type="application/pdf" 
+                style={{width: '100%', height: '300px'}}/>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
