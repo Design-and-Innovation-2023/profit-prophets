@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/profit-prophets/static/css/main.720a96a4.css",
-    "main.js": "/profit-prophets/static/js/main.023aef0f.js",
+    "main.js": "/profit-prophets/static/js/main.613729b9.js",
     "static/css/508.e48ca17e.chunk.css": "/profit-prophets/static/css/508.e48ca17e.chunk.css",
     "static/js/508.dbfddc67.chunk.js": "/profit-prophets/static/js/508.dbfddc67.chunk.js",
     "static/js/443.0f1a60c0.chunk.js": "/profit-prophets/static/js/443.0f1a60c0.chunk.js",
@@ -13,7 +13,6 @@
     "static/js/725.b7b26bf4.chunk.js": "/profit-prophets/static/js/725.b7b26bf4.chunk.js",
     "static/css/325.bc2a38cf.chunk.css": "/profit-prophets/static/css/325.bc2a38cf.chunk.css",
     "static/js/325.2c1f90fe.chunk.js": "/profit-prophets/static/js/325.2c1f90fe.chunk.js",
-    "static/js/795.ba13c85a.chunk.js": "/profit-prophets/static/js/795.ba13c85a.chunk.js",
     "static/js/172.30030be0.chunk.js": "/profit-prophets/static/js/172.30030be0.chunk.js",
     "static/js/327.a1279e4c.chunk.js": "/profit-prophets/static/js/327.a1279e4c.chunk.js",
     "static/js/526.351e42a7.chunk.js": "/profit-prophets/static/js/526.351e42a7.chunk.js",
@@ -34,11 +33,16 @@
     "static/js/744.08bb8da6.chunk.js": "/profit-prophets/static/js/744.08bb8da6.chunk.js",
     "static/js/89.b88c2ab7.chunk.js": "/profit-prophets/static/js/89.b88c2ab7.chunk.js",
     "static/js/607.6e06adc5.chunk.js": "/profit-prophets/static/js/607.6e06adc5.chunk.js",
-    "static/media/barclays-visit.mp4": "/profit-prophets/static/media/barclays-visit.59620b3a0517b7c0cb1f.mp4",
     "static/media/barclays-office.jpg": "/profit-prophets/static/media/barclays-office.444f4eec751e05cdbc77.jpg",
     "static/media/think-aloud.jpg": "/profit-prophets/static/media/think-aloud.b196da4209ff76c47cf2.jpg",
+    "static/media/poster.png": "/profit-prophets/static/media/poster.4dd82c3787b938275aee.png",
+    "static/media/team-picture.jpg": "/profit-prophets/static/media/team-picture.f1866108ad3123919370.jpg",
     "static/media/PhoneNotification.png": "/profit-prophets/static/media/PhoneNotification.d412b9ae711dea72f23e.png",
+    "static/media/roadshow-2.jpg": "/profit-prophets/static/media/roadshow-2.6f41f94fd6d85be97a54.jpg",
+    "static/media/roadshow-1.jpg": "/profit-prophets/static/media/roadshow-1.97d5e3655572fb812b8b.jpg",
     "static/media/BankAccountRedact.png": "/profit-prophets/static/media/BankAccountRedact.5cdb51c54cdad61debf1.png",
+    "static/media/roadshow-3.jpg": "/profit-prophets/static/media/roadshow-3.e570857fce4570865e23.jpg",
+    "static/media/integrative-thinking-document.pdf": "/profit-prophets/static/media/integrative-thinking-document.4639186a8ab852851edf.pdf",
     "static/media/MetricsComparison.png": "/profit-prophets/static/media/MetricsComparison.633b026031b744124b2d.png",
     "static/media/high-fidelity-prototype.png": "/profit-prophets/static/media/high-fidelity-prototype.633b026031b744124b2d.png",
     "static/media/Nicole.jpg": "/profit-prophets/static/media/Nicole.74c21ef6bfb1aa535b2d.jpg",
@@ -48,10 +52,13 @@
     "static/media/paper-prototype.jpeg": "/profit-prophets/static/media/paper-prototype.bd0f6c0573342a17067e.jpeg",
     "static/media/NotificationSurvey.png": "/profit-prophets/static/media/NotificationSurvey.06ccb31fa741453f5260.png",
     "static/media/FinancialSurvey.png": "/profit-prophets/static/media/FinancialSurvey.7097339439695be18ab9.png",
+    "static/media/prototyping-document.pdf": "/profit-prophets/static/media/prototyping-document.3c72bb2feee54d0f591d.pdf",
     "static/media/KaiEn.jpg": "/profit-prophets/static/media/KaiEn.1dcaebac4b3a09e6d865.jpg",
     "static/media/MetricsBreakdown.png": "/profit-prophets/static/media/MetricsBreakdown.d4558df9f3856eb924b5.png",
+    "static/media/team-contract.pdf": "/profit-prophets/static/media/team-contract.79bd30b4c684b854cdcc.pdf",
     "static/media/Ryan.jpg": "/profit-prophets/static/media/Ryan.4f8331b1109f5375d552.jpg",
     "static/media/meeting.png": "/profit-prophets/static/media/meeting.9e487bfd78b05718e116.png",
+    "static/media/barclays-meeting-minutes.pdf": "/profit-prophets/static/media/barclays-meeting-minutes.d60dfbd3cceb2ca9377a.pdf",
     "static/media/RateChaser.png": "/profit-prophets/static/media/RateChaser.95009c56e89f0a814571.png",
     "static/media/brainstorming.png": "/profit-prophets/static/media/brainstorming.8e6716743a156c291a48.png",
     "static/media/globe.png": "/profit-prophets/static/media/globe.6db79ffc5c9ef51e33fc.png",
@@ -61,7 +68,7 @@
     "static/media/globe-outline.svg": "/profit-prophets/static/media/globe-outline.bc8362fee0fdfd30cb1c.svg",
     "index.html": "/profit-prophets/index.html",
     "main.720a96a4.css.map": "/profit-prophets/static/css/main.720a96a4.css.map",
-    "main.023aef0f.js.map": "/profit-prophets/static/js/main.023aef0f.js.map",
+    "main.613729b9.js.map": "/profit-prophets/static/js/main.613729b9.js.map",
     "508.e48ca17e.chunk.css.map": "/profit-prophets/static/css/508.e48ca17e.chunk.css.map",
     "508.dbfddc67.chunk.js.map": "/profit-prophets/static/js/508.dbfddc67.chunk.js.map",
     "443.0f1a60c0.chunk.js.map": "/profit-prophets/static/js/443.0f1a60c0.chunk.js.map",
@@ -78,6 +85,6 @@
   },
   "entrypoints": [
     "static/css/main.720a96a4.css",
-    "static/js/main.023aef0f.js"
+    "static/js/main.613729b9.js"
   ]
 }
