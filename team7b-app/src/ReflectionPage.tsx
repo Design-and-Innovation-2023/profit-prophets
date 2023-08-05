@@ -8,6 +8,7 @@ import IntegrativeThinkingPDF from './assets/integrative-thinking-document.pdf';
 import RoadshowPic1 from './assets/roadshow-1.jpg';
 import RoadshowPic2 from './assets/roadshow-2.jpg';
 import RoadshowPic3 from './assets/roadshow-3.jpg';
+import RoadshowPic4 from './assets/roadshow-4.jpg';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -393,6 +394,7 @@ export default function ProjectJourneyPage() {
                 <img src={RoadshowPic2} alt="Roadshow" style={{maxWidth: '33.33%', height: 'auto', border: '2px solid black'}}/>
                 <img src={RoadshowPic3} alt="Roadshow" style={{maxWidth: '33.33%', height: 'auto', border: '2px solid black'}}/>
             </div>
+            <img src={RoadshowPic4} alt="Roadshow" style={{maxWidth: '100%', height: 'auto', border: '2px solid black', marginTop: '5px', justifyContent: 'center' }}/>
             <iframe
               width="465px"
               height="400px"

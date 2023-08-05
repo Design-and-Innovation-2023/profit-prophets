@@ -36,7 +36,7 @@ const Footer = () => {
               fontFamily: 'Open Sans, sans-serif',
               padding: '10px'
             }}>
-              Kai En Yong | Yan Hern Ryan Sim | Shi Ying Nicole Ng | Ng Geok Ting | Enrique Marcelo | Daycee Li Lyn Lau
+              Kai En Yong | Ryan Sim | Shi Ying Nicole Ng | Ng Geok Ting | Enrique Marcelo | Daycee Li Lyn Lau
             </div>
           </Box>
         </Toolbar>
