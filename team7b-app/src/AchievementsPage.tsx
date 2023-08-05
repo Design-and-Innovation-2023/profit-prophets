@@ -5,8 +5,7 @@ import Tabs from '@mui/material/Tabs';
 import TwoColumnLayout from './TwoColumnLayout';
 import './AchievementsPage.css';
 import TeamPhoto from './assets/team-picture.jpg';
-import VideoPlayer from './VideoPlayer';
-// import BarclaysVisit from '../assets/barclays-visit.mp4';
+import PosterPic from './assets/poster.png';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -79,6 +78,7 @@ const AchievementsPage = () => {
         }}
       >
         <Tab label="Proud Moments" {...a11yProps(0)} />
+        <Tab label="Poster" {...a11yProps(1)} />
         {/* <Divider variant="middle" style={{display: 'block', height: 0.1, maxWidth: 210, backgroundColor: '#59596a'}}/> */}
         {/* <Tab label="Weekly Pitch Videos" {...a11yProps(4)} /> */}
       </Tabs>
@@ -117,7 +117,7 @@ const AchievementsPage = () => {
                     }} style={{ color: '#59596a', margin: '20px' }}>
                         Teammates, New and Old
                     </Typography>
-                    <img src={TeamPhoto} alt="Team" style={{ width: '80%', maxWidth: '500px', marginLeft: '20px', marginRight: '20px', marginTop: '20px' }} />
+                    <img src={TeamPhoto} alt="Team" style={{ width: '80%', maxWidth: '500px', marginLeft: '20px', marginRight: '20px'}} />
                     <TwoColumnLayout
                         leftContent={
                             <div>
@@ -178,7 +178,7 @@ const AchievementsPage = () => {
                             fontSize: '14px',
                             margin: '20px'
                         }} paragraph>
-                        Thankfully, being a team of six allows us to efficiently distribute the workload. By leveraging our strengths and expertise, we can divide responsibilities and efficiently tackle challenges despite a short time frame. We also set clear and achievable goals to ensures that each team member knows their role. This allowed us to maintain focus and make significant progress within the given time constraints.
+                        Thankfully, being a team of six allows us to efficiently distribute the workload. By leveraging our strengths and expertise, we assigned roles and responsibilities that allowed us to navigate the challenges effectively, despite the tight schedule. We set precise and attainable goals, which kept us aligned and focused, and helped us make significant headway within our time limitations.
                         </Typography>
                       </div>
                     }
@@ -219,7 +219,7 @@ const AchievementsPage = () => {
                             fontSize: '14px',
                             margin: '20px'
                         }} paragraph>
-                        To address this challenge, we adopted a proactive and communicative approach with a comprehensive list of questions to discuss with the client. By asking thoughtful questions and involving them in the design process, we learned about their objectives and concerns, such as the cost of living crisis in the UK. Additionally, we took the initiative to present our design concepts at client meetings. This allowed us to receive timely feedback from the client and validate whether our solutions aligned with their expectations.
+                        However, we take pride in the solution we devised to overcome this challenge. We developed an exhaustive list of queries to clarify the project's scope during our meetings with the client. By engaging them actively in the design process, we uncovered their primary concerns and objectives, such as the UK's cost of living crisis. Our proactive approach included presenting our design concepts during these meetings, which provided us with immediate feedback and helped us ensure our designs met their expectations.
                         </Typography>
                       </div>
                     }
@@ -260,7 +260,7 @@ const AchievementsPage = () => {
                             fontSize: '14px',
                             margin: '20px'
                         }} paragraph>
-                        To comply with legal requirements, we prioritized safety. We researched the UK government websites and relevant legislations for savings accounts, striving to understand the complex legal jargon. When in doubt, we consulted with our client, and followed industry standards for bank and savings account applications.
+                        To comply with legal requirements, we prioritized safety. We researched the UK government websites and relevant legislations for savings accounts, striving to understand the complex legal jargon. When in doubt, we consulted with our client, and followed industry standards for bank and savings account applications. Our team takes pride in how we addressed these complexities and came up with solutions that complied with the law.
                         </Typography>
                       </div>
                     }
@@ -268,6 +268,23 @@ const AchievementsPage = () => {
                   </div>
                 </div>
               </div>
+        </Container>
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        {/* Content for Roadshow */}
+        <Container>
+            <div className="position-relative" style={{ textAlign: 'left'}}>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '36px',
+                lineHeight: '36px',
+                fontWeight: 700
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                Poster
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            <img src={PosterPic} alt="Team" style={{ width: '100%', maxWidth: '500px', marginLeft: '20px', marginRight: '20px'}} />
+            </div>
         </Container>
       </TabPanel>
     </Box>
