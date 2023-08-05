@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/profit-prophets/static/css/main.720a96a4.css",
-    "main.js": "/profit-prophets/static/js/main.613729b9.js",
+    "main.js": "/profit-prophets/static/js/main.90cc4459.js",
     "static/css/508.e48ca17e.chunk.css": "/profit-prophets/static/css/508.e48ca17e.chunk.css",
     "static/js/508.dbfddc67.chunk.js": "/profit-prophets/static/js/508.dbfddc67.chunk.js",
     "static/js/443.0f1a60c0.chunk.js": "/profit-prophets/static/js/443.0f1a60c0.chunk.js",
@@ -35,6 +35,7 @@
     "static/js/607.6e06adc5.chunk.js": "/profit-prophets/static/js/607.6e06adc5.chunk.js",
     "static/media/barclays-office.jpg": "/profit-prophets/static/media/barclays-office.444f4eec751e05cdbc77.jpg",
     "static/media/think-aloud.jpg": "/profit-prophets/static/media/think-aloud.b196da4209ff76c47cf2.jpg",
+    "static/media/roadshow-4.jpg": "/profit-prophets/static/media/roadshow-4.f5f5da0777fc9ef59765.jpg",
     "static/media/poster.png": "/profit-prophets/static/media/poster.4dd82c3787b938275aee.png",
     "static/media/team-picture.jpg": "/profit-prophets/static/media/team-picture.f1866108ad3123919370.jpg",
     "static/media/PhoneNotification.png": "/profit-prophets/static/media/PhoneNotification.d412b9ae711dea72f23e.png",
@@ -68,7 +69,7 @@
     "static/media/globe-outline.svg": "/profit-prophets/static/media/globe-outline.bc8362fee0fdfd30cb1c.svg",
     "index.html": "/profit-prophets/index.html",
     "main.720a96a4.css.map": "/profit-prophets/static/css/main.720a96a4.css.map",
-    "main.613729b9.js.map": "/profit-prophets/static/js/main.613729b9.js.map",
+    "main.90cc4459.js.map": "/profit-prophets/static/js/main.90cc4459.js.map",
     "508.e48ca17e.chunk.css.map": "/profit-prophets/static/css/508.e48ca17e.chunk.css.map",
     "508.dbfddc67.chunk.js.map": "/profit-prophets/static/js/508.dbfddc67.chunk.js.map",
     "443.0f1a60c0.chunk.js.map": "/profit-prophets/static/js/443.0f1a60c0.chunk.js.map",
@@ -85,6 +86,6 @@
   },
   "entrypoints": [
     "static/css/main.720a96a4.css",
-    "static/js/main.613729b9.js"
+    "static/js/main.90cc4459.js"
   ]
 }
