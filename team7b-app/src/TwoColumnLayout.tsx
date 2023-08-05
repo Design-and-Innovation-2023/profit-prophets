@@ -1,4 +1,5 @@
 import React from 'react';
+import './TwoColumnLayout.css';
 
 interface TwoColumnLayoutProps {
   leftContent: React.ReactNode;
@@ -7,11 +8,11 @@ interface TwoColumnLayoutProps {
 
 const TwoColumnLayout: React.FC<TwoColumnLayoutProps> = ({ leftContent, rightContent }) => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-      <div style={{ flex: 1 }}>
+    <div className="two-column-layout">
+      <div className="left-content">
         {leftContent}
       </div>
-      <div style={{ flex: 1 }}>
+      <div className="right-content">
         {rightContent}
       </div>
     </div>

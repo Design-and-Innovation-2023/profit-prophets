@@ -1,0 +1,20 @@
+/* Default styles for larger screens */
+.two-column-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content, .right-content {
+  flex: 1;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .two-column-layout {
+    flex-direction: column;
+  }
+
+  .left-content, .right-content {
+    width: 100%;
+  }
+}

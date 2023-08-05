@@ -9,6 +9,19 @@
   transition: opacity 0.3s ease;
 }
 
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .team-member-card {
+    flex-direction: column;
+  }
+
+  .left-content, .right-content {
+    width: 100%;
+  }
+}
+
+
 .team-member-card:hover,
 .team-member-card.focused {
   opacity: 1;
@@ -69,3 +82,4 @@
 .team-member-card-icon:hover {
   transform: scale(1.2);
 }
+

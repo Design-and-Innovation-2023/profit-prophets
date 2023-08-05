@@ -14,13 +14,25 @@
   transition: opacity 0.3s ease;
   /* background-color: lightgray; */
 }
-/* 
-.proud-moments-card:hover,
-.proud-moments-card.focused {
-  opacity: 1;
-  border-color: rgb(0, 176, 245);
+
+.proud-moments-card-narrow {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  transition: opacity 0.3s ease;
+  /* background-color: lightgray; */
 }
 
-.proud-moments-card:not(:hover) {
-  opacity: 0.5;
-} */
+.right-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}

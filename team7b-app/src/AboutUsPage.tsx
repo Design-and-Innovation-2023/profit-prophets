@@ -27,7 +27,7 @@ const teamMembers = [
     id: 3,
     name: 'Enrique Marcelo',
     role: 'Software Engineer',
-    description: 'Talented software engineer with an interest in Artificial Intelligence and Machine Learning. Contributed to the concept design, research and this website.',
+    description: 'Driven software engineer with an interest in Artificial Intelligence and Machine Learning. Contributed to the concept design, research and this website.',
     portrait: './assets/team_members/Enrique.jpg',
     linkedin: 'https://www.linkedin.com/in/enrique-marcelo/',
     github: 'https://github.com/iShorty/',
