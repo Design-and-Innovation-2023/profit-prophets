@@ -2,8 +2,12 @@ import { Box, Container, Divider, Typography } from '@mui/material';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import * as React from 'react';
-import conceptualizationImg from './assets/conceptualization.png'; 
 import TeamContractPDF from './assets/team-contract.pdf';
+import PrototypingPDF from './assets/prototyping-document.pdf';
+import IntegrativeThinkingPDF from './assets/integrative-thinking-document.pdf';
+import RoadshowPic1 from './assets/roadshow-1.jpg';
+import RoadshowPic2 from './assets/roadshow-2.jpg';
+import RoadshowPic3 from './assets/roadshow-3.jpg';
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -72,14 +76,15 @@ export default function ProjectJourneyPage() {
           },
         }}
       >
-        <Tab label="Team Contract" {...a11yProps(0)} />
-        <Tab label="Requirement Gathering" {...a11yProps(1)} />
-        <Tab label="Prototyping" {...a11yProps(2)} />
-        <Tab label="Refinement" {...a11yProps(3)} />
-        <Tab label="Roadshow" sx={{ borderBottom: 1, borderColor: 'divider' }} {...a11yProps(4)} />
+        <Tab label="Team Reflection" {...a11yProps(0)} />
+        <Tab label="Team Contract" {...a11yProps(1)} />
+        <Tab label="Requirement Gathering" {...a11yProps(2)} />
+        <Tab label="Prototyping" {...a11yProps(3)} />
+        <Tab label="Refinement" {...a11yProps(4)} />
+        <Tab label="Roadshow" sx={{ borderBottom: 1, borderColor: 'divider' }} {...a11yProps(5)} />
         {/* Divider between Roadshow and Team Dailies */}
-        <Tab label="Team Dailies" {...a11yProps(5)} />
-        <Tab label="Weekly Pitch Videos" {...a11yProps(6)} />
+        <Tab label="Team Dailies" {...a11yProps(6)} />
+        <Tab label="Weekly Pitch Videos" {...a11yProps(7)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         {/* Content for Requirement Gathering */}
@@ -91,9 +96,66 @@ export default function ProjectJourneyPage() {
                 lineHeight: '36px',
                 fontWeight: 700
                 }} style={{ color: '#59596a'  , margin: '20px'}}>
-                Team Contract
+                Team Reflection
             </Typography>
             <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px',
+                width: '90%',
+                textAlign: 'justify'
+            }} paragraph> Starting the project as a team that has yet to work with each other was challenging as the groups were assigned in a 
+            pseudo-random manner where we did not have choices of who we were working with. When we met, some were old faces, some were 
+            completely new faces but we had something in common, the motivation to learn and complete this module. While we had the fire, 
+            some limits had to be established and there came the team contract to govern our actions and ensure that there is a commitment to 
+            see the project through while maintaining the work-life balance. <br/><br/>
+
+            Heading into the problems, We agreed upon an approach after analyzing the brief as a team and felt that a web application that 
+            calls APIs to get user’s banking information, existing products on the market and some means of authentication that was created by 
+            the government would solve it easily, all we had to do was get the requirements from the client and from there, make simple 
+            interface or logic changes and that's that.<br/><br/>
+            
+            After meeting Greg and realizing that unlike Singapore, where there is a national 
+            digital identify platform (Singpass and MyInfo), the UK does not have anything similar to this, the closest being their national 
+            insurance number which can act as an identifier neither was there any API endpoints for a fully digital banking experience that 
+            banks provide unlike in Singapore where every bank were voluntold (a Singaporean term used to refer to actions that a superior 
+            wishes to be done but remained voluntary for a subordinate) to participate in the national standards for API endpoints. 
+            This realization that there were geographical constraints too to our solution as we were accustomed to the tools that were 
+            available in Singapore and we would have been able to build what we conceptualized easily in singapore, wherehas in the UK 
+            where there are still physical elements to banking such as opening an account, document verification and mailers for pin and 
+            usernames, we had to pivot and reconceptualized based on the given constraints. <br/><br/>
+            
+            Looking at what is available on the existing market, we felt that what was lacking was personalization and as such we 
+            conceptualized the Rate Chaser to be focused on personalization for the user and the recommendations were to be made for the 
+            most optimal benefit for the user without affecting any lifestyle changes. Given that we were not able to automatically create 
+            and transfer the money due to technical and regulatory constraints, we focused on providing a neutral point of view for the user 
+            where we enable comparisons between our recommendations and their existing accounts on pure quantitative data and to stand 
+            out, perhaps forecast their savings like what a financial advisor will do for their client. <br/><br/>
+            
+            In hindsight, we definitely rushed into conceptualizing an idea without a true understanding of the the problem or our target 
+            users along with the constraints that it may bring with it which we felt now may have limited the ideas that we were 
+            conceptualized as we mainly focused on something accessible by users like web or mobile app but just failed to “dream” bigger 
+            and look outside the tunnel of an application.
+            
+            </Typography>
+            </div>
+        </Container>
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+        {/* Content for Requirement Gathering */}
+        <Container>
+            <div className="position-relative" style={{ textAlign: 'left'}}>
+            <Typography variant="h1" sx={{
+                fontFamily: '"Raleway", sans-serif',
+                fontSize: '36px',
+                lineHeight: '36px',
+                fontWeight: 700
+                }} style={{ color: '#59596a'  , margin: '20px'}}>
+                Team Contract
+            </Typography>
+            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5', marginBottom: '20px'}}/>
             {/* Embedding PDF file */}
             <embed 
                 src={TeamContractPDF}
@@ -103,7 +165,7 @@ export default function ProjectJourneyPage() {
         </Container>
       </TabPanel>
 
-      <TabPanel value={value} index={1}>
+      <TabPanel value={value} index={2}>
         {/* Content for Requirement Gathering */}
         <Container>
             <div className="position-relative" style={{ textAlign: 'left'}}>
@@ -115,54 +177,38 @@ export default function ProjectJourneyPage() {
                 }} style={{ color: '#59596a'  , margin: '20px'}}>
                 Requirements Gathering
             </Typography>
-            <Typography variant="h1" sx={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '28px',
-                lineHeight: '36px',
-                fontWeight: 600
-                }} style={{ color: '#59596a'  , margin: '20px'}}>
-                18th July 2023
-            </Typography>
             <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
             <Typography variant="body2" sx={{
                 fontFamily: '"Open Sans", sans-serif',
                 lineHeight: '24px',
                 fontSize: '14px',
-                margin: '20px'
+                margin: '20px',
+                textAlign: 'justify'
             }} paragraph>
-      The team studied the concept of mental models and their influence on perception and association. This learning was particularly relevant to our product design process, particularly in understanding how our target users perceive the affordances of the user interface. <br/><br/>
+              Reflecting on the process of requirements gathering, we experienced a journey of continuous learning, effective communication, 
+              and a user-centric approach. <br/><br/>
 
-      The concept of mental models also resonated with our internal and external communication processes. Since every team member and partner comes from diverse backgrounds with distinct mental models, understanding these differences and aligning them towards a common goal is vital. We employ a transparent approach, ensuring everyone is on the same page about our shared objectives.
+              Our interactions with partners were an enlightening experience. Initially, our understanding of the project differed from the 
+              partner's vision. This divergence highlighted the importance of open dialogues and the need to align our mental models. Our 
+              scenario-based questions, conceptualized with the help of a large language model, facilitated deeper insights into the partner's
+               expectations. We realized the importance of respecting users' unique financial needs and the importance of consent in dealing
+                with sensitive data such as their residential address. This understanding influenced our product's design, making it more
+                 empathetic and user-centric. <br/><br/>
 
-      To streamline communication with our partners and avoid misinterpretation, we devised a Behavior Driven Development Model. Rather than focusing on distinct features, we centred our approach on the expected behavior of the final product. We used Google Jamboard for collaborative brainstorming and integrated a large language model to assess the quality of our questions critically.
+              Next, we needed understanding of how to compare the various savings accounts. Our research on key metrics for comparing savings
+               accounts reaffirmed the importance of a user-centric approach. We worked diligently to identify and rank metrics essential for
+                customers. By studying existing platforms, different types of savings accounts, and open banking principles, we identified
+                 several essential metrics, such as Interest Rate, Eligibility Requirements, Fees, Tax Implications, Accessibility, Account
+                  Closure Requirements, Cashback Aspects, Open Banking Integration, and Customer Support. <br/><br/>
 
-      <br/><br/>
-
-      Our next steps include meeting our partners to gather requirements, scope, and intended behaviors. Afterwards, we will collaboratively decide on the direction of our first prototype and allocate tasks accordingly.
+              In summary, our journey of requirements gathering was filled with valuable learnings about the power of mental models, the
+               importance of aligning understanding among diverse team members and partners, the role of assertive and constructive feedback,
+                and the significance of a user-centric approach in product design.
             </Typography>
-            <img src={conceptualizationImg} alt="dailies image" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
-            <Typography variant="h1" sx={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '28px',
-                lineHeight: '36px',
-                fontWeight: 600
-                }} style={{ color: '#59596a'  , margin: '20px'}}>
-                Day 2 - 19th July
-            </Typography>
-            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
-            <Typography variant="body2" sx={{
-                fontFamily: '"Open Sans", sans-serif',
-                lineHeight: '24px',
-                fontSize: '14px',
-                margin: '20px'
-            }} paragraph>
-            Populate with dailies, maybe summarise or rephrase in more of a reflection format.
-            </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="dailies image" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
             </div>
         </Container>
       </TabPanel>
-      <TabPanel value={value} index={2}>
+      <TabPanel value={value} index={3}>
         {/* Content for Prototyping */}
         <Container>
             <div className="position-relative" style={{ textAlign: 'left'}}>
@@ -172,48 +218,74 @@ export default function ProjectJourneyPage() {
                 lineHeight: '36px',
                 fontWeight: 700
                 }} style={{ color: '#59596a'  , margin: '20px'}}>
-                18th - 19th July
-            </Typography>
-            <Typography variant="h1" sx={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '28px',
-                lineHeight: '36px',
-                fontWeight: 600
-                }} style={{ color: '#59596a'  , margin: '20px'}}>
-                Day 1 - 18th July
+                Prototyping
             </Typography>
             <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
             <Typography variant="body2" sx={{
                 fontFamily: '"Open Sans", sans-serif',
                 lineHeight: '24px',
                 fontSize: '14px',
-                margin: '20px'
+                margin: '20px',
+                textAlign: 'justify'
             }} paragraph>
-            Populate with dailies, maybe summarise or rephrase in more of a reflection format.
+            Reflecting on the prototyping phase of our project, it becomes clear how invaluable it is to test and iterate upon an idea. 
+            This stage was filled with learnings about our users, the product requirements, and the trade-offs between accuracy and user 
+            privacy. <br/><br/>
+
+            Our prototyping process began with outlining the necessary conditions for our application to succeed. Using the template, 
+            it led us to identify three crucial elements to prioritize: user trust, the application's ability to recommend optimal savings 
+            accounts, and the intuitive display of information. Recognizing the importance of user trust, we decided to survey our peers to 
+            gauge their willingness to share sensitive financial information.
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="dailies image" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
-            <Typography variant="h1" sx={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '28px',
-                lineHeight: '36px',
-                fontWeight: 600
-                }} style={{ color: '#59596a'  , margin: '20px'}}>
-                Day 2 - 19th July
-            </Typography>
-            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
+
+            {/* Embedding PDF file */}
+            <embed 
+              src={PrototypingPDF}
+              type="application/pdf" 
+              style={{marginLeft: '20px', width: '100%', height: '600px'}}/>
+            
             <Typography variant="body2" sx={{
                 fontFamily: '"Open Sans", sans-serif',
                 lineHeight: '24px',
                 fontSize: '14px',
-                margin: '20px'
+                margin: '20px',
+                textAlign: 'justify'
             }} paragraph>
-            Populate with dailies, maybe summarise or rephrase in more of a reflection format.
+            The survey results highlighted some significant user concerns. While most agreed to share their financial information given 
+            assurance of security and privacy, a small group was opposed, citing fears of data leaks and misuse of information for marketing
+             purposes. This feedback underscored the importance of demonstrating strong data protection measures to our users. It also
+              raised a crucial question for the team: should we prioritize the accuracy of recommendations or user anonymity? <br/><br/>
+
+            Our user feedback also helped shape the design of our comparison display. Most respondents preferred a comparison matrix over
+             a text chunk, finding it easier to digest. However, there was also an appreciation for the detail provided in the text chunk,
+              indicating that our design should balance the need for simplicity and depth.
+
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="dailies image" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
+              {/* Embedding PDF file */}
+              <embed 
+              src={IntegrativeThinkingPDF}
+              type="application/pdf" 
+              style={{marginLeft: '20px', width: '100%', height: '600px'}}/>
+
+            <Typography variant="body2" sx={{
+                fontFamily: '"Open Sans", sans-serif',
+                lineHeight: '24px',
+                fontSize: '14px',
+                margin: '20px',
+                textAlign: 'justify'
+            }} paragraph>
+            Testing our prototype with a sample of users offered even more insights. Users struggled to provide accurate estimates of their 
+            spending habits, suggesting a possible disconnect between perceived and actual expenditure. This presented an interesting 
+            challenge and led to a suggestion for using computer vision to analyze user bank statements for a more accurate understanding
+            of their financial habits.
+
+            However, like the dilemma we had above between user data control and accuracy, we needed to find a balance. Using the tension 
+            templates we identified that we could provide the users with the choice to determine the limits of the data given to the application with the understanding that providing inaccurate data will result in inaccurate recommendations.
+            </Typography>
             </div>
         </Container>
       </TabPanel>
-      <TabPanel value={value} index={3}>
+      <TabPanel value={value} index={4}>
         {/* Content for Refinement */}
         <Container>
             <div className="position-relative" style={{ textAlign: 'left'}}>
@@ -223,48 +295,61 @@ export default function ProjectJourneyPage() {
                 lineHeight: '36px',
                 fontWeight: 700
                 }} style={{ color: '#59596a'  , margin: '20px'}}>
-                18th - 19th July
-            </Typography>
-            <Typography variant="h1" sx={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '28px',
-                lineHeight: '36px',
-                fontWeight: 600
-                }} style={{ color: '#59596a'  , margin: '20px'}}>
-                Day 1 - 18th July
+                Refinement
             </Typography>
             <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
             <Typography variant="body2" sx={{
                 fontFamily: '"Open Sans", sans-serif',
                 lineHeight: '24px',
                 fontSize: '14px',
-                margin: '20px'
+                margin: '20px',
+                textAlign: 'justify'
             }} paragraph>
-            Populate with dailies, maybe summarise or rephrase in more of a reflection format.
+            With the prototype finalized, it's time to embark on a productive journey of refinement for our prototype. We started by 
+            gathering feedback from Greg, who provided insightful comments on the user interface, usability, and functionalities. We took 
+            his feedback seriously and re-evaluated our design and functionality choices, realizing that we had overlooked some aspects of 
+            the user experience, especially for first-time users. <br/><br/>
+
+            This process reaffirmed the importance of fresh perspectives. Users who aren't familiar with the product may interpret or 
+            interact with it differently. To address this, we implemented legends and tooltips for easier navigation and understanding. 
+            We also categorized the bank accounts using carousels to clarify their distinctions. <br/><br/>
+
+            Interestingly, Greg's feedback about the mobile interface challenged our initial belief about the unity of functionality between
+             the web and mobile versions. It was a significant realization that compromises can be made for a better user experience, even
+              if it means diverging functionalities between platforms. This led us to reconfigure the mobile interface, significantly
+               improving its usability. <br/><br/>
+
+            This phase also brought up an internal debate about the method of displaying the comparison of bank accounts. We plan to resolve
+             this by collecting more user feedback, illustrating the importance of collective decision-making when designing a user-focused
+              product. <br/><br/>
+
+            In terms of privacy concerns raised during our prototype testing, we learned about the significance of assuring users about the
+             safety of their data. We're currently brainstorming ways to effectively communicate this, which is critical in gaining
+              user trust. Additionally, we realized that our application seemed to only cater to users looking to compare single accounts,
+               limiting our user base. To address this, we modified our flow to consider users with multiple bank accounts, proving how
+                crucial user feedback is in identifying overlooked user requirements. <br/><br/>
+
+            Our proposed tech stack with Flutter and Firebase was accepted by Greg, who pointed out our reliance on Google technology and
+             possible cost implications. This led to an engaging discussion on the trade-offs between cost and development time, underlining
+              the complex decisions involved in software development. <br/><br/>
+
+            As we worked on our usability tests, we understood the importance of a structured script and scenario for accurate results.
+             The process showed us that user testing isn't merely about completion but understanding the user's perspective. It was
+              enlightening to see how we could adjust our methods to yield more accurate insights. <br/><br/>
+
+            Lastly, we faced the challenge of notification frequency and medium choice. We concluded to let users choose their preferred
+             frequency and medium of notification, again emphasizing the importance of user-centric design. <br/><br/>
+
+            The process of refinement is a continual one. As we receive more feedback and make changes, we are constantly learning and
+             improving. The journey has reminded us of the importance of open-mindedness, adaptability, and the value of fresh perspectives.
+              Looking ahead, we aim to continue learning from our experiences, refine our product, and provide a user-friendly solution that
+               meets the needs of our users effectively.
+
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="dailies image" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
-            <Typography variant="h1" sx={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '28px',
-                lineHeight: '36px',
-                fontWeight: 600
-                }} style={{ color: '#59596a'  , margin: '20px'}}>
-                Day 2 - 19th July
-            </Typography>
-            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
-            <Typography variant="body2" sx={{
-                fontFamily: '"Open Sans", sans-serif',
-                lineHeight: '24px',
-                fontSize: '14px',
-                margin: '20px'
-            }} paragraph>
-            Populate with dailies, maybe summarise or rephrase in more of a reflection format.
-            </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="dailies image" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
             </div>
         </Container>
       </TabPanel>
-      <TabPanel value={value} index={4}>
+      <TabPanel value={value} index={5}>
         {/* Content for Roadshow */}
         <Container>
             <div className="position-relative" style={{ textAlign: 'left'}}>
@@ -274,15 +359,7 @@ export default function ProjectJourneyPage() {
                 lineHeight: '36px',
                 fontWeight: 700
                 }} style={{ color: '#59596a'  , margin: '20px'}}>
-                18th - 19th July
-            </Typography>
-            <Typography variant="h1" sx={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '28px',
-                lineHeight: '36px',
-                fontWeight: 600
-                }} style={{ color: '#59596a'  , margin: '20px'}}>
-                Day 1 - 18th July
+                Roadshow
             </Typography>
             <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
             <Typography variant="body2" sx={{
@@ -291,31 +368,44 @@ export default function ProjectJourneyPage() {
                 fontSize: '14px',
                 margin: '20px'
             }} paragraph>
-            Populate with dailies, maybe summarise or rephrase in more of a reflection format.
+            The roadshow was a significant milestone in our journey. The demonstration of our prototype outside a controlled environment
+             and its subsequent interaction with the general public was indeed a thrilling yet nerve-wracking experience. <br/><br/>
+
+            During the showcase, I was pleased to note that the traffic light color coding in the application was well received. It served
+             its purpose in providing a clear visual cue for the users about the superiority of accounts, which confirms our efforts in
+              designing an intuitive user interface were not in vain. <br/><br/>
+
+            The event also brought to light some potential improvements that could enhance the user experience and broaden our user base.
+             Proactively querying the users about their financial goals and purposes for existing accounts before making recommendations
+              could be a crucial enhancement that we can look into as their goals inevitably shape their choice of accounts, and the user
+               feedback rightly suggested that taking this into consideration could make our service much more customized and user-friendly.
+                For instance, suggesting multiple account options like a fixed term account or an instant access savings account based on
+                 their goals for house ownership or college fund creation could add immense value to our service and expand the user base
+                  to include working adults to retirees.<br/><br/>
+
+            The roadshow was an insightful reality check on our product's practical usability. It validated our countless hours spent on
+             testing and modifying, and to see users interacting with the application without much difficulty was deeply rewarding. It
+              underlined the reality that receiving and incorporating user feedback is paramount to the success of our project. 
+
             </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="dailies image" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
-            <Typography variant="h1" sx={{
-                fontFamily: '"Raleway", sans-serif',
-                fontSize: '28px',
-                lineHeight: '36px',
-                fontWeight: 600
-                }} style={{ color: '#59596a'  , margin: '20px'}}>
-                Day 2 - 19th July
-            </Typography>
-            <Divider variant="middle" style={{display: 'block', height: 2, maxWidth: 140, backgroundColor: '#00b0f5'}}/>
-            <Typography variant="body2" sx={{
-                fontFamily: '"Open Sans", sans-serif',
-                lineHeight: '24px',
-                fontSize: '14px',
-                margin: '20px'
-            }} paragraph>
-            Populate with dailies, maybe summarise or rephrase in more of a reflection format.
-            </Typography>
-            <img src={process.env.PUBLIC_URL + '/placeholder.jpeg'} alt="dailies image" style={{ width: '100%', maxWidth: '600px', margin: '20px'}} />
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+                <img src={RoadshowPic1} alt="Roadshow" style={{maxWidth: '33.33%', height: 'auto', border: '2px solid black'}}/>
+                <img src={RoadshowPic2} alt="Roadshow" style={{maxWidth: '33.33%', height: 'auto', border: '2px solid black'}}/>
+                <img src={RoadshowPic3} alt="Roadshow" style={{maxWidth: '33.33%', height: 'auto', border: '2px solid black'}}/>
+            </div>
+            <iframe
+              width="465px"
+              height="400px"
+              src="https://www.youtube.com/embed/q885wT7Q7WQ"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+              allowFullScreen
+              style={{marginTop: '15px' }}
+            ></iframe>
             </div>
         </Container>
       </TabPanel>
-      <TabPanel value={value} index={5}>
+      <TabPanel value={value} index={6}>
         {/* Content for Team Dailies */}
         <Container>
           <div className="position-relative" style={{ textAlign: 'left'}}>
@@ -803,7 +893,7 @@ export default function ProjectJourneyPage() {
           </div>
         </Container>
       </TabPanel>
-      <TabPanel value={value} index={6}>
+      <TabPanel value={value} index={7}>
         {/* Content for Weekly Pitch Videos */}
         <Container>
             <div className="position-relative" style={{ textAlign: 'left'}}>

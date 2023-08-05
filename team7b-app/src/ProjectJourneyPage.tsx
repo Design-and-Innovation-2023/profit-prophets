@@ -71,7 +71,7 @@ const ProjectJourneyPage = () => {
             From our research, we identified crucial metrics including interest rate, eligibility requirements, fees, 
             tax implications, accessibility, account closure requirements, potential cashback, open banking integration, 
             and customer support. We also commenced ranking these metrics based on user surveys and interviews to ensure our 
-            findings align with user needs and preferences. <br/><br/>
+            findings align with user needs and preferences.  <br/><br/>
             The team recognised that achieving user trust is vital, especially with sharing sensitive financial data, hence we
             considered the implications of GDPR and financial regulations in our design. We also sought impartial opinions 
             from our peers through surveys, examining their perceptions of the application and their willingness to share financial information.
@@ -79,6 +79,29 @@ const ProjectJourneyPage = () => {
             citing potential risks of data leaks and misuse for marketing or advertisement.
             </p>
         </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+          contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} // Change box color here
+          contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }} // Change arrow color here
+        >
+          <h3 className="vertical-timeline-element-title">User Needs Research (20 - 22 July 2023)</h3>
+          <p>Our team researched key metrics to enable customers to effectively compare savings accounts. 
+            We conducted an in-depth analysis of different types of savings accounts, reviewed open banking principles, 
+            and studied existing account comparison websites.
+            From our research, we identified crucial metrics including interest rate, eligibility requirements, fees, 
+            tax implications, accessibility, account closure requirements, potential cashback, open banking integration, 
+            and customer support. We also commenced ranking these metrics based on user surveys and interviews to ensure our 
+            findings align with user needs and preferences.  <br/><br/>
+            The team recognised that achieving user trust is vital, especially with sharing sensitive financial data, hence we
+            considered the implications of GDPR and financial regulations in our design. We also sought impartial opinions 
+            from our peers through surveys, examining their perceptions of the application and their willingness to share financial information.
+            Out of 20 peers surveyed, 14 agreed to share data, given secure storage and proper usage, while the remaining six objected, 
+            citing potential risks of data leaks and misuse for marketing or advertisement.
+            </p>
+        </VerticalTimelineElement>
+        
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
