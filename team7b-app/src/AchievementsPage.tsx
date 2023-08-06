@@ -126,12 +126,13 @@ const AchievementsPage = () => {
                 <TwoColumnLayout
                     leftContent={
                       <div style={{ display: 'flex', flexDirection: 'column'}}>
-                          <img src={TeamPhoto} alt="Team" style={{ maxHeight: '322px', marginLeft: '20px', marginRight: '20px', flex: 1 }} />
+                          <img src={TeamPhoto} alt="Team" style={{ maxHeight: '400px', marginLeft: '20px', marginRight: '20px', flex: 1 }} />
                             <Typography variant="body2" sx={{
                               fontFamily: '"Open Sans", sans-serif',
                               lineHeight: '24px',
                               fontSize: '14px',
-                              margin: '20px'
+                              margin: '20px',
+                              textAlign: 'justify'
                             }} paragraph>
                             Our team consists of six individuals, each bringing their unique skill sets and perspectives. At the outset, we faced the obstacle of varying degrees of familiarity with one another.
                             </Typography>
@@ -139,13 +140,14 @@ const AchievementsPage = () => {
                     }
                     rightContent={
                       <div style={{ display: 'flex', flexDirection: 'column', maxWidth: '430px', marginLeft: '40px'}}>
-                          <img src={TeamworkIcon} alt="Team" style={{ maxHeight: '322px', flex: 1 }} />
+                          <img src={TeamworkIcon} alt="Team" style={{ maxHeight: '400px', flex: 1 }} />
                           <Typography variant="body2" sx={{
                               fontFamily: '"Open Sans", sans-serif',
                               lineHeight: '24px',
                               fontSize: '14px',
                               margin: '20px',
                               flex: '1',
+                              textAlign: 'justify'
                           }} paragraph>
                               We know the importance of cohesive teamwork and swiftly focused on establishing clear means of communication and rapport among each other. With a clear understanding of our mindsets, we embarked on our ambitious project with determination and a shared commitment to success.
                           </Typography>
@@ -160,7 +162,7 @@ const AchievementsPage = () => {
                             fontFamily: '"Raleway", sans-serif',
                             fontSize: '28px',
                             lineHeight: '28px',
-                            fontWeight: 700
+                            fontWeight: 700,
                             }} style={{ color: '#59596a'  , margin: '20px'}}>
                             Short Timeframe
                     </Typography>
@@ -169,7 +171,8 @@ const AchievementsPage = () => {
                         fontFamily: '"Open Sans", sans-serif',
                         lineHeight: '24px',
                         fontSize: '14px',
-                        margin: '20px'
+                        margin: '20px',
+                        textAlign: 'justify'
                       }} paragraph>
                       Our Overseas Immersion Programme (OIP) spans from July 13th to August 5th. However, our classes commence on July 18th, and it would be only on the 19th that we will have our first meeting with our client, Mr. Gregory Peters. With the OIP exhibition fast approaching, we would have a mere 9 working days to handle crucial tasks like gathering functional and non-functional requirements from the client, conducting research, concept design and prototyping.
                     </Typography>
@@ -180,7 +183,8 @@ const AchievementsPage = () => {
                         fontFamily: '"Open Sans", sans-serif',
                         lineHeight: '24px',
                         fontSize: '14px',
-                        margin: '20px'
+                        margin: '20px',
+                        textAlign: 'justify'
                     }} paragraph>
                     Thankfully, being a team of six allows us to efficiently distribute the workload. By leveraging our strengths and expertise, we assigned roles and responsibilities that allowed us to navigate the challenges effectively, despite the tight schedule. We set precise and attainable goals, which kept us aligned and focused, and helped us make significant headway within our time limitations.
                     </Typography>
@@ -193,7 +197,8 @@ const AchievementsPage = () => {
                         fontFamily: '"Raleway", sans-serif',
                         fontSize: '28px',
                         lineHeight: '28px',
-                        fontWeight: 700
+                        fontWeight: 700,
+                        textAlign: 'justify'
                         }} style={{ color: '#59596a'  , margin: '20px'}}>
                         Unclear Design Requirements
                 </Typography>
@@ -208,7 +213,8 @@ const AchievementsPage = () => {
                         fontFamily: '"Open Sans", sans-serif',
                         lineHeight: '24px',
                         fontSize: '14px',
-                        margin: '20px'
+                        margin: '20px',
+                        textAlign: 'justify'
                       }} paragraph>
                       One of the significant obstacles we faced during the project was dealing with hazy design requirements. With Barclays as our client, we were tasked with designing an application to help individuals maximise their savings and ensure it is convenient for use. With numerous considerations even prior to meeting Mr Peters and the initial specifications lacking in specificity, we found ourselves in a challenging position to determine precisely what the client wanted and needed for their project.
                       </Typography>
@@ -225,7 +231,8 @@ const AchievementsPage = () => {
                         fontFamily: '"Open Sans", sans-serif',
                         lineHeight: '24px',
                         fontSize: '14px',
-                        margin: '20px'
+                        margin: '20px',
+                        textAlign: 'justify'
                     }} paragraph>
                     However, we take pride in the solution we devised to overcome this challenge. We developed an exhaustive list of queries to clarify the project's scope during our meetings with the client. By engaging them actively in the design process, we uncovered their primary concerns and objectives, such as the UK's cost of living crisis. Our proactive approach included presenting our design concepts during these meetings, which provided us with immediate feedback and helped us ensure our designs met their expectations.
                     </Typography>
@@ -239,7 +246,8 @@ const AchievementsPage = () => {
                   fontFamily: '"Raleway", sans-serif',
                         fontSize: '28px',
                         lineHeight: '28px',
-                        fontWeight: 700
+                        fontWeight: 700,
+                        
                       }} style={{ color: '#59596a'  , margin: '20px'}}>
                         Savings Accounts, Comparison Metrics, and the Law
                 </Typography>
@@ -248,7 +256,8 @@ const AchievementsPage = () => {
                     fontFamily: '"Open Sans", sans-serif',
                     lineHeight: '24px',
                     fontSize: '14px',
-                    margin: '20px'
+                    margin: '20px',
+                    textAlign: 'justify'
                   }} paragraph>
                   Another significant hurdle is our lack of familiarity with the numerous banks and their savings accounts, which was vital to our design. To create the key savings account comparison tool in our design, we conducted extensive research on the essential metrics required to evaluate and compare different accounts. We alse faced additional complexity due to unfamiliarity with relevant legal considerations.
                 </Typography>
@@ -259,7 +268,8 @@ const AchievementsPage = () => {
                     fontFamily: '"Open Sans", sans-serif',
                     lineHeight: '24px',
                     fontSize: '14px',
-                    margin: '20px'
+                    margin: '20px',
+                    textAlign: 'justify'
                   }} paragraph>
                   To comply with legal requirements, we prioritized safety. We researched the UK government websites and relevant legislations for savings accounts, striving to understand the complex legal jargon. When in doubt, we consulted with our client, and followed industry standards for bank and savings account applications. Our team takes pride in how we addressed these complexities and came up with solutions that complied with the law.
                 </Typography>
