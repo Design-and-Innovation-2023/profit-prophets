@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/profit-prophets/static/css/main.b5f38a7a.css",
-    "main.js": "/profit-prophets/static/js/main.ff5e25b9.js",
+    "main.js": "/profit-prophets/static/js/main.3f3338f1.js",
     "static/css/508.e48ca17e.chunk.css": "/profit-prophets/static/css/508.e48ca17e.chunk.css",
     "static/js/508.dbfddc67.chunk.js": "/profit-prophets/static/js/508.dbfddc67.chunk.js",
     "static/js/443.0f1a60c0.chunk.js": "/profit-prophets/static/js/443.0f1a60c0.chunk.js",
@@ -74,7 +74,7 @@
     "static/media/globe-outline.svg": "/profit-prophets/static/media/globe-outline.bc8362fee0fdfd30cb1c.svg",
     "index.html": "/profit-prophets/index.html",
     "main.b5f38a7a.css.map": "/profit-prophets/static/css/main.b5f38a7a.css.map",
-    "main.ff5e25b9.js.map": "/profit-prophets/static/js/main.ff5e25b9.js.map",
+    "main.3f3338f1.js.map": "/profit-prophets/static/js/main.3f3338f1.js.map",
     "508.e48ca17e.chunk.css.map": "/profit-prophets/static/css/508.e48ca17e.chunk.css.map",
     "508.dbfddc67.chunk.js.map": "/profit-prophets/static/js/508.dbfddc67.chunk.js.map",
     "443.0f1a60c0.chunk.js.map": "/profit-prophets/static/js/443.0f1a60c0.chunk.js.map",
@@ -91,6 +91,6 @@
   },
   "entrypoints": [
     "static/css/main.b5f38a7a.css",
-    "static/js/main.ff5e25b9.js"
+    "static/js/main.3f3338f1.js"
   ]
 }
