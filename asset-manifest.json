@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/profit-prophets/static/css/main.720a96a4.css",
-    "main.js": "/profit-prophets/static/js/main.90cc4459.js",
+    "main.css": "/profit-prophets/static/css/main.b5f38a7a.css",
+    "main.js": "/profit-prophets/static/js/main.ff5e25b9.js",
     "static/css/508.e48ca17e.chunk.css": "/profit-prophets/static/css/508.e48ca17e.chunk.css",
     "static/js/508.dbfddc67.chunk.js": "/profit-prophets/static/js/508.dbfddc67.chunk.js",
     "static/js/443.0f1a60c0.chunk.js": "/profit-prophets/static/js/443.0f1a60c0.chunk.js",
@@ -31,7 +31,7 @@
     "static/js/343.c7033bf3.chunk.js": "/profit-prophets/static/js/343.c7033bf3.chunk.js",
     "static/js/787.d7d4daf1.chunk.js": "/profit-prophets/static/js/787.d7d4daf1.chunk.js",
     "static/js/744.08bb8da6.chunk.js": "/profit-prophets/static/js/744.08bb8da6.chunk.js",
-    "static/js/89.b88c2ab7.chunk.js": "/profit-prophets/static/js/89.b88c2ab7.chunk.js",
+    "static/js/89.c579c7bb.chunk.js": "/profit-prophets/static/js/89.c579c7bb.chunk.js",
     "static/js/607.6e06adc5.chunk.js": "/profit-prophets/static/js/607.6e06adc5.chunk.js",
     "static/media/barclays-office.jpg": "/profit-prophets/static/media/barclays-office.444f4eec751e05cdbc77.jpg",
     "static/media/think-aloud.jpg": "/profit-prophets/static/media/think-aloud.b196da4209ff76c47cf2.jpg",
@@ -39,6 +39,7 @@
     "static/media/poster.png": "/profit-prophets/static/media/poster.4dd82c3787b938275aee.png",
     "static/media/team-picture.jpg": "/profit-prophets/static/media/team-picture.f1866108ad3123919370.jpg",
     "static/media/PhoneNotification.png": "/profit-prophets/static/media/PhoneNotification.d412b9ae711dea72f23e.png",
+    "static/media/teamwork-icon.jpg": "/profit-prophets/static/media/teamwork-icon.e87b2bbdca2b65c712b0.jpg",
     "static/media/roadshow-2.jpg": "/profit-prophets/static/media/roadshow-2.6f41f94fd6d85be97a54.jpg",
     "static/media/roadshow-1.jpg": "/profit-prophets/static/media/roadshow-1.97d5e3655572fb812b8b.jpg",
     "static/media/BankAccountRedact.png": "/profit-prophets/static/media/BankAccountRedact.5cdb51c54cdad61debf1.png",
@@ -48,7 +49,9 @@
     "static/media/high-fidelity-prototype.png": "/profit-prophets/static/media/high-fidelity-prototype.633b026031b744124b2d.png",
     "static/media/Nicole.jpg": "/profit-prophets/static/media/Nicole.74c21ef6bfb1aa535b2d.jpg",
     "static/media/GeokTing.jpg": "/profit-prophets/static/media/GeokTing.1546aa2e50922718cd38.jpg",
+    "static/media/happy-client.png": "/profit-prophets/static/media/happy-client.f1eb4abb55c78bf5e233.png",
     "static/media/conceptualization.png": "/profit-prophets/static/media/conceptualization.4dbb8275d0885ea9ca43.png",
+    "static/media/requirements.jpg": "/profit-prophets/static/media/requirements.2765d52a32021a8feaf8.jpg",
     "static/media/Enrique.jpg": "/profit-prophets/static/media/Enrique.20693c90c41d3a4091ce.jpg",
     "static/media/paper-prototype.jpeg": "/profit-prophets/static/media/paper-prototype.bd0f6c0573342a17067e.jpeg",
     "static/media/NotificationSurvey.png": "/profit-prophets/static/media/NotificationSurvey.06ccb31fa741453f5260.png",
@@ -60,16 +63,18 @@
     "static/media/Ryan.jpg": "/profit-prophets/static/media/Ryan.4f8331b1109f5375d552.jpg",
     "static/media/meeting.png": "/profit-prophets/static/media/meeting.9e487bfd78b05718e116.png",
     "static/media/barclays-meeting-minutes.pdf": "/profit-prophets/static/media/barclays-meeting-minutes.d60dfbd3cceb2ca9377a.pdf",
+    "static/media/hourglass-running-out.jpg": "/profit-prophets/static/media/hourglass-running-out.0b3640e981a8eec544ed.jpg",
     "static/media/RateChaser.png": "/profit-prophets/static/media/RateChaser.95009c56e89f0a814571.png",
     "static/media/brainstorming.png": "/profit-prophets/static/media/brainstorming.8e6716743a156c291a48.png",
     "static/media/globe.png": "/profit-prophets/static/media/globe.6db79ffc5c9ef51e33fc.png",
+    "static/media/savings-account.jpg": "/profit-prophets/static/media/savings-account.8fe903dd1ed8259aff7b.jpg",
     "static/media/logo.svg": "/profit-prophets/static/media/logo.6ce24c58023cc2f8fd88.svg",
     "static/media/github-mark.svg": "/profit-prophets/static/media/github-mark.6fa18895f6e6c7772cab.svg",
     "static/media/github-mark-white.svg": "/profit-prophets/static/media/github-mark-white.97ed8e7eef60d61ca469.svg",
     "static/media/globe-outline.svg": "/profit-prophets/static/media/globe-outline.bc8362fee0fdfd30cb1c.svg",
     "index.html": "/profit-prophets/index.html",
-    "main.720a96a4.css.map": "/profit-prophets/static/css/main.720a96a4.css.map",
-    "main.90cc4459.js.map": "/profit-prophets/static/js/main.90cc4459.js.map",
+    "main.b5f38a7a.css.map": "/profit-prophets/static/css/main.b5f38a7a.css.map",
+    "main.ff5e25b9.js.map": "/profit-prophets/static/js/main.ff5e25b9.js.map",
     "508.e48ca17e.chunk.css.map": "/profit-prophets/static/css/508.e48ca17e.chunk.css.map",
     "508.dbfddc67.chunk.js.map": "/profit-prophets/static/js/508.dbfddc67.chunk.js.map",
     "443.0f1a60c0.chunk.js.map": "/profit-prophets/static/js/443.0f1a60c0.chunk.js.map",
@@ -81,11 +86,11 @@
     "325.2c1f90fe.chunk.js.map": "/profit-prophets/static/js/325.2c1f90fe.chunk.js.map",
     "787.d7d4daf1.chunk.js.map": "/profit-prophets/static/js/787.d7d4daf1.chunk.js.map",
     "744.08bb8da6.chunk.js.map": "/profit-prophets/static/js/744.08bb8da6.chunk.js.map",
-    "89.b88c2ab7.chunk.js.map": "/profit-prophets/static/js/89.b88c2ab7.chunk.js.map",
+    "89.c579c7bb.chunk.js.map": "/profit-prophets/static/js/89.c579c7bb.chunk.js.map",
     "607.6e06adc5.chunk.js.map": "/profit-prophets/static/js/607.6e06adc5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.720a96a4.css",
-    "static/js/main.90cc4459.js"
+    "static/css/main.b5f38a7a.css",
+    "static/js/main.ff5e25b9.js"
   ]
 }
