@@ -45,4 +45,4 @@ To run and launch the website on your local machine, please follow the steps bel
 3. Run 'npm install' command, followed by the 'npm start' command.
 
 ## Acknowledgments
-We would also like to mention our partner, Gregory Peters from Barclays for giving us the opportunity to work on this Saving Rate Chaser project, and our professor Jonathan Grizou for their valuable feedback and comments over these past few weeks.
+We would also like to mention our partner, Greg from Barclays for giving us the opportunity to work on this Saving Rate Chaser project, and Prof Grizou for their valuable feedback and comments over these past few weeks.
