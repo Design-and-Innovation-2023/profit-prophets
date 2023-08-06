@@ -6,12 +6,12 @@ import './AboutUsPage.css';
 const teamMembers = [
   {
     id: 1,
-    name: 'Yan Hern Ryan Sim',
+    name: 'Ryan Sim',
     role: 'Software Engineer',
-    description: 'Yan Hern Ryan Sim is a talented software engineer.',
+    description: 'Technology is my enabler, Software Engineering is my tool. Aspiring Sofware Engineer',
     portrait: './assets/team_members/Ryan.jpg',
-    // linkedin: 'https://www.linkedin.com/company/the-white-house',
-    // github: 'https://github.com/iShorty/',
+    linkedin: 'https://www.linkedin.com/in/ryanyhsim/',
+    github: 'https://github.com/RyanSimYH',
     // website: 'https://www.taharkhan.com/',
   },
   {
@@ -81,7 +81,7 @@ const AboutUsPage: React.FC = () => {
           fontSize: '14px',
           margin: '20px'
       }} paragraph>
-      Hello! We are Profit Prophets, comprising of Kai En Yong, Yan Hern Ryan Sim, Shi Ying Nicole Ng, Ng Geok Ting, Enrique Carlos Marcelo and Daycee Li Lyn Lau. 
+      Hello! We are Profit Prophets, comprising of Kai En Yong, Ryan Sim, Shi Ying Nicole Ng, Ng Geok Ting, Enrique Carlos Marcelo and Daycee Li Lyn Lau. 
       Thank you for your interest in our work and us! The main point of contact for this project is Ryan Sim. 
       If you'd like to contact any of us individually, our personal links are below.
       <br />
